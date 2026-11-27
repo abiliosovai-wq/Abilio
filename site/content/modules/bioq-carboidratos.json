@@ -1,0 +1,3015 @@
+{
+ "schema": 1,
+ "id": "bioq-carboidratos",
+ "subject": "bioquimica",
+ "order": 1,
+ "title": "Metabolismo dos carboidratos",
+ "subtitle": "Do estado alimentado ao jejum, das enzimas às doenças: entender o mecanismo para resolver qualquer vinheta.",
+ "version": "2026.11.27",
+ "path": [
+  {
+   "type": "pretest",
+   "id": "pretest",
+   "title": "Pré-teste diagnóstico",
+   "subtitle": "10 questões · seu ponto de partida"
+  },
+  {
+   "type": "unit",
+   "unit": "u1"
+  },
+  {
+   "type": "unit",
+   "unit": "u2"
+  },
+  {
+   "type": "unit",
+   "unit": "u3"
+  },
+  {
+   "type": "checkpoint",
+   "id": "cp1",
+   "title": "Checkpoint 1",
+   "subtitle": "8 vinhetas · Unidades 1–3 · modo prova",
+   "units": [
+    "u1",
+    "u2",
+    "u3"
+   ],
+   "focus": [
+    "u1",
+    "u2",
+    "u3"
+   ],
+   "size": 8
+  },
+  {
+   "type": "unit",
+   "unit": "u4"
+  },
+  {
+   "type": "unit",
+   "unit": "u5"
+  },
+  {
+   "type": "checkpoint",
+   "id": "cp2",
+   "title": "Checkpoint 2",
+   "subtitle": "10 vinhetas · Unidades 1–5 · modo prova",
+   "units": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5"
+   ],
+   "focus": [
+    "u4",
+    "u5"
+   ],
+   "size": 10
+  },
+  {
+   "type": "unit",
+   "unit": "u6"
+  },
+  {
+   "type": "unit",
+   "unit": "u7"
+  },
+  {
+   "type": "checkpoint",
+   "id": "cp3",
+   "title": "Checkpoint 3",
+   "subtitle": "10 vinhetas · Unidades 1–7 · modo prova",
+   "units": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5",
+    "u6",
+    "u7"
+   ],
+   "focus": [
+    "u6",
+    "u7"
+   ],
+   "size": 10
+  },
+  {
+   "type": "unit",
+   "unit": "u8"
+  },
+  {
+   "type": "unit",
+   "unit": "u9"
+  },
+  {
+   "type": "final",
+   "id": "final",
+   "title": "Prova final cumulativa",
+   "subtitle": "30 vinhetas · domínio ≥85% · cronômetro opcional (90 s/questão)",
+   "size": 30,
+   "secondsPerQuestion": 90
+  }
+ ],
+ "pretest": [
+  "q-u1-sw-2",
+  "q-u2-pfk-p1",
+  "q-u3-thi-p1",
+  "q-u3-pdhd-p1",
+  "q-u4-eth-p1",
+  "q-u5-g6pd-p1",
+  "q-u6-mus-p1",
+  "q-u7-mca-p1",
+  "q-u8-hfi-p1",
+  "q-u9-cpep-p1"
+ ],
+ "units": [
+  {
+   "id": "u1",
+   "status": "ready",
+   "title": "Estado alimentado × jejum",
+   "short": "U1 · Alimentado × jejum",
+   "subtitle": "O interruptor insulina/glucagon e de onde vem a glicose do jejum",
+   "objectives": [
+    "Prever se **qualquer** enzima do módulo está ligada ou desligada no estado alimentado e no jejum — inclusive as que você ainda não estudou.",
+    "Dizer quais tecidos captam glicose sem insulina e por quê.",
+    "Montar a sequência de combustíveis do jejum até a inanição e explicar quem usa o quê.",
+    "Usar a **regra-mestra do bloqueio enzimático** para deduzir o quadro de uma doença a partir da via."
+   ],
+   "concepts": [
+    "fedfast.switch",
+    "fedfast.glut",
+    "fedfast.fuel",
+    "fedfast.output"
+   ],
+   "miniTest": {
+    "levels": [
+     1,
+     2,
+     2,
+     3,
+     3,
+     4,
+     4
+    ],
+    "previous": 1
+   },
+   "screens": [
+    {
+     "id": "u1-s01",
+     "type": "predict",
+     "role": "hook",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "level": 1,
+     "shuffle": false,
+     "prompt": "**Palpite antes da explicação** (errar aqui é esperado — e ajuda a aprender).\n\nUma pessoa está em jejum há 16 horas. No fígado dela, a glicogênio fosforilase ([[glycogen phosphorylase]]) está:",
+     "options": [
+      {
+       "text": "Fosforilada e ativa",
+       "correct": true
+      },
+      {
+       "text": "Fosforilada e inativa",
+       "why": "A fosforilação desliga as enzimas que armazenam, não as que liberam glicose."
+      },
+      {
+       "text": "Desfosforilada e ativa",
+       "why": "Desfosforilação é obra da insulina, que predomina depois das refeições."
+      },
+      {
+       "text": "Desfosforilada e inativa",
+       "why": "É o estado da fosforilase depois de uma refeição, não no jejum."
+      }
+     ],
+     "reveal": "No jejum, o glucagon ativa a proteína quinase A, que **fosforila** a fosforilase — e ela fica **ativa**, quebrando glicogênio para manter a glicemia.\n\nFica uma pergunta: se fosforilar ativa a fosforilase, por que a mesma fosforilação **desliga** outras enzimas? Os próximos cartões respondem.",
+     "rule": "interruptor",
+     "tested": "A vignette describes a fasting patient and asks which hepatic enzyme is active in its phosphorylated form."
+    },
+    {
+     "id": "u1-c01",
+     "type": "card",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "title": "Dois hormônios, dois mensageiros",
+     "body": "**Insulina** (estado alimentado) liga-se a um receptor tirosina-quinase ([[receptor tyrosine kinase]]) e ativa fosfatases, que **retiram** fosfatos das enzimas.\n\n**Glucagon** (jejum) e **adrenalina** (estresse, exercício) usam receptores ligados à proteína Gs ([[Gs protein]]) → adenilato ciclase → AMPc ([[cAMP]]) → proteína quinase A ([[protein kinase A]]), que **coloca** fosfatos.\n\nColocar e tirar fosfato muda o metabolismo em minutos, sem fabricar enzima nova."
+    },
+    {
+     "id": "u1-c02",
+     "type": "card",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "title": "Fosforilado = modo jejum",
+     "body": "O fosfato não quer dizer “ligado” nem “desligado”: ele põe a enzima no **modo jejum**.\n- Enzimas que **liberam** glicose ou combustível (glicogênio fosforilase, lipase do adipócito) → fosforiladas = **ativas**.\n- Enzimas que **armazenam** (glicogênio sintase, síntese de ácidos graxos) → fosforiladas = **inativas**.\n\nPergunta-chave diante de qualquer enzima: ela serve ao jejum ou ao armazenamento?"
+    },
+    {
+     "id": "u1-s02",
+     "type": "predict",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "level": 1,
+     "shuffle": false,
+     "prompt": "Pela regra, como está a glicogênio sintase ([[glycogen synthase]]) no fígado durante o jejum?",
+     "options": [
+      {
+       "text": "Fosforilada e inativa",
+       "correct": true
+      },
+      {
+       "text": "Fosforilada e ativa",
+       "why": "A fosforilação só liga as enzimas que servem ao jejum; a sintase armazena."
+      },
+      {
+       "text": "Desfosforilada e ativa",
+       "why": "Esse é o estado depois de uma refeição, com insulina alta."
+      },
+      {
+       "text": "Desfosforilada e inativa",
+       "why": "Desfosforilada, a sintase fica ativa."
+      }
+     ],
+     "reveal": "A sintase **armazena** glicogênio — no jejum isso não interessa. A PKA a fosforila e ela fica **inativa**.\n\nO mesmo sinal liga a fosforilase e desliga a sintase: o fígado nunca monta e desmonta glicogênio ao mesmo tempo (seria um ciclo fútil, gastando ATP à toa).",
+     "rule": "interruptor",
+     "tested": "Questions ask about the phosphorylation state and activity of hepatic glycogen synthase after glucagon administration or during fasting."
+    },
+    {
+     "id": "u1-c03",
+     "type": "card",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "title": "Como a insulina desfaz o sinal",
+     "body": "A insulina tira o fígado do modo jejum por dois caminhos:\n1. Ativa a fosfodiesterase ([[phosphodiesterase]]) → o AMPc cai → a PKA desliga.\n2. Ativa a proteína fosfatase 1 ([[protein phosphatase 1]]) → os fosfatos saem das enzimas.\n\nDepois de uma refeição: sintase ativa, fosforilase inativa, glicólise e síntese de gordura ligadas. Quem manda é a **proporção insulina/glucagon**, não o valor isolado de cada hormônio."
+    },
+    {
+     "id": "u1-s03",
+     "type": "predict",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "level": 2,
+     "shuffle": false,
+     "prompt": "Você ainda não estudou a lipase hormônio-sensível ([[hormone-sensitive lipase]]), que libera ácidos graxos do triglicerídeo no adipócito. **Só pela regra**: o que a adrenalina (via AMPc e PKA) faz com ela?",
+     "options": [
+      {
+       "text": "Fosforila e ativa",
+       "correct": true
+      },
+      {
+       "text": "Fosforila e inativa",
+       "why": "Inativar uma enzima que libera combustível não faria sentido no estresse."
+      },
+      {
+       "text": "Desfosforila e ativa",
+       "why": "A PKA coloca fosfatos; quem retira é a insulina, via fosfatases."
+      },
+      {
+       "text": "Não altera a enzima",
+       "why": "Ela é justamente o alvo da PKA no adipócito."
+      }
+     ],
+     "reveal": "Ela **libera combustível** no jejum e no estresse → modo jejum → fosforilada = **ativa**. A insulina faz o contrário — por isso freia a lipólise depois das refeições.\n\nVocê acabou de deduzir um fato de outro módulo (lipídios) usando só uma regra. É esse o objetivo do curso.",
+     "rule": "interruptor",
+     "tested": "A patient with a catecholamine-secreting tumor has increased serum free fatty acids; the question asks which adipocyte enzyme is activated by protein kinase A."
+    },
+    {
+     "id": "u1-s04",
+     "type": "match",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "level": 1,
+     "prompt": "Associe cada sinal à forma como ele age.",
+     "headers": [
+      "Sinal",
+      "Como age"
+     ],
+     "rows": [
+      [
+       "Insulina",
+       "Receptor tirosina-quinase → ativa fosfatases"
+      ],
+      [
+       "Glucagon",
+       "Receptor ligado a Gs no hepatócito → AMPc → PKA"
+      ],
+      [
+       "Adrenalina no músculo esquelético",
+       "Receptor β₂ → AMPc (o músculo não tem receptor de glucagon)"
+      ],
+      [
+       "Cortisol",
+       "Receptor intracelular → aumenta a produção de enzimas da gliconeogênese (horas)"
+      ]
+     ],
+     "explanation": "Fosforilação muda a atividade em **minutos**; o cortisol age mudando a **quantidade** de enzima (horas). E o músculo não responde ao glucagon: quem o manda quebrar glicogênio é a adrenalina (e a própria contração).",
+     "rule": "interruptor",
+     "tested": "A question asks why glucagon does not mobilize skeletal muscle glycogen, or which receptor class mediates the effects of insulin."
+    },
+    {
+     "id": "u1-c04",
+     "type": "card",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "title": "Quem entra sem pedir licença",
+     "body": "A glicose atravessa a membrana por transportadores GLUT ([[glucose transporter]]), por difusão facilitada (sem gastar ATP).\n- **GLUT1**: hemácia, barreira hematoencefálica, placenta.\n- **GLUT3**: neurônio — alta afinidade, capta mesmo com glicemia baixa.\n\nNenhum dos dois depende de insulina. Faz sentido: cérebro e hemácia não podem parar de receber glicose só porque a insulina cai no jejum."
+    },
+    {
+     "id": "u1-s05",
+     "type": "cloze",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "level": 1,
+     "text": "O transportador que a insulina leva até a membrana do músculo esquelético e do adipócito é o {{GLUT4|glut 4|glut-4|glut iv}}.",
+     "explanation": "Sem insulina, o GLUT4 fica guardado em vesículas dentro da célula; a insulina (via PI3K/Akt) as funde à membrana. Por isso, no diabetes tipo 1 sem tratamento, músculo e gordura captam pouca glicose — mas o cérebro continua captando normalmente.\n\nO **exercício** também leva o GLUT4 à membrana, por outra via (AMPK), sem precisar de insulina.",
+     "rule": "transportador",
+     "tested": "A question asks which tissue's glucose uptake falls the most when insulin is absent: skeletal muscle and adipose tissue (GLUT4)."
+    },
+    {
+     "id": "u1-c05",
+     "type": "card",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "title": "GLUT2: a porta de mão dupla",
+     "body": "**GLUT2** fica no hepatócito, na célula β do pâncreas, no rim e na face basolateral do enterócito.\n- Km alto: só transporta muito quando a glicose está alta.\n- Mão dupla: o fígado capta glicose depois da refeição e exporta no jejum.\n\nNa célula β, a glicose de dentro acompanha a do sangue: o GLUT2 é parte do **sensor** que decide quanta insulina liberar.\n**GLUT5** transporta frutose (enterócito, espermatozoide).",
+     "verify": "Em humanos, a célula β expressa predominantemente GLUT1; as fontes de revisão e a prova usam GLUT2. Ensinamos a resposta de prova e não cobramos essa nuance."
+    },
+    {
+     "id": "u1-s06",
+     "type": "match",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "level": 1,
+     "prompt": "Associe cada transportador ao lugar onde ele é típico.",
+     "headers": [
+      "Transportador",
+      "Onde é típico"
+     ],
+     "rows": [
+      [
+       "GLUT1",
+       "Hemácia e barreira hematoencefálica"
+      ],
+      [
+       "GLUT2",
+       "Hepatócito e célula β do pâncreas"
+      ],
+      [
+       "GLUT3",
+       "Neurônio"
+      ],
+      [
+       "GLUT4",
+       "Músculo esquelético e adipócito"
+      ],
+      [
+       "GLUT5",
+       "Enterócito (absorve frutose)"
+      ]
+     ],
+     "explanation": "Lógica de sobrevivência: quem precisa de glicose o tempo todo (cérebro, hemácia) usa transportador **independente de insulina**; quem armazena (músculo, gordura) só capta muito quando há insulina — isto é, quando sobra glicose.",
+     "rule": "transportador",
+     "tested": "A vignette describes a tissue whose glucose uptake increases after a meal only when insulin is present and asks which transporter is responsible."
+    },
+    {
+     "id": "u1-s07",
+     "type": "mcq",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "level": 2,
+     "prompt": "Mini-vinheta no formato da prova:",
+     "stem": "A 26-year-old woman runs a 10-km race. Blood samples drawn during the race show a decreased plasma insulin concentration and increased glucose uptake into skeletal muscle compared with resting values.",
+     "question": "Translocation of which of the following transporters to the sarcolemma best explains the increased glucose uptake?",
+     "options": [
+      {
+       "text": "GLUT1",
+       "why": "É basal e constante (hemácia, barreira hematoencefálica); não aumenta com a contração."
+      },
+      {
+       "text": "GLUT2",
+       "why": "Fica no fígado, na célula β, no rim e no intestino — não no músculo."
+      },
+      {
+       "text": "GLUT3",
+       "why": "É o transportador do neurônio."
+      },
+      {
+       "text": "GLUT4",
+       "correct": true
+      },
+      {
+       "text": "GLUT5",
+       "why": "Transporta frutose, no enterócito."
+      }
+     ],
+     "reveal": "A contração ativa a AMPK ([[AMPK]]), sinal de pouca energia, que leva o **GLUT4** à membrana **sem precisar de insulina**. Por isso o exercício baixa a glicemia de diabéticos — e é parte do tratamento da resistência à insulina.",
+     "rule": "transportador",
+     "tested": "Exercise-induced, insulin-independent glucose uptake by skeletal muscle (GLUT4 translocation) appears in vignettes about patients with diabetes who become hypoglycemic after exercise."
+    },
+    {
+     "id": "u1-c06",
+     "type": "card",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "title": "Linha do tempo do combustível",
+     "body": "Depois de uma refeição, a glicemia é mantida por fontes que se sucedem:\n1. **Alimentado** (até ~4 h): glicose da dieta; insulina alta; o fígado guarda glicogênio.\n2. **Pós-absortivo**: o glucagon sobe; a glicogenólise hepática segura a glicemia.\n3. **Jejum** (por volta de 1 dia): o glicogênio do fígado acaba; a gliconeogênese, que já vinha crescendo, assume.\n4. **Inanição** (> 3 dias): corpos cetônicos viram combustível do cérebro e poupam proteína muscular.",
+     "verify": "Os tempos são aproximados e variam entre as fontes (o glicogênio hepático se esgota entre ~12 e 48 h). Ensinamos “por volta de 1 dia” e nenhuma questão cobra número exato."
+    },
+    {
+     "id": "u1-s08",
+     "type": "order",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "level": 1,
+     "prompt": "Ponha em ordem a **principal** fonte de energia ou de glicose à medida que o jejum se prolonga.",
+     "items": [
+      "Glicose absorvida da refeição",
+      "Glicogenólise hepática",
+      "Gliconeogênese hepática",
+      "Corpos cetônicos assumem boa parte do cérebro"
+     ],
+     "explanation": "Cada fonte entra quando a anterior se esgota: o glicogênio hepático dura cerca de um dia; a gliconeogênese depende de substratos (lactato, alanina, glicerol); na inanição, os corpos cetônicos reduzem a necessidade de glicose — e, com isso, a quebra de proteína muscular para fazer glicose.",
+     "rule": "combustivel",
+     "tested": "A vignette gives the duration of fasting (for example, 12 hours versus 5 days) and asks which process is the main source of blood glucose or of brain fuel."
+    },
+    {
+     "id": "u1-c07",
+     "type": "card",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "title": "Quem usa o quê (e por quê)",
+     "body": "- **Hemácia**: sem mitocôndria → só glicose, por glicólise anaeróbia (vira lactato).\n- **Cérebro**: glicose; na inanição, também corpos cetônicos ([[ketone bodies]]). Ácidos graxos praticamente não servem (atravessam mal a barreira hematoencefálica).\n- **Músculo em repouso e coração**: preferem ácidos graxos.\n- **Fígado**: fabrica corpos cetônicos, mas não os usa — falta a enzima que os ativa ([[thiophorase|tioforase]])."
+    },
+    {
+     "id": "u1-s09",
+     "type": "predict",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "level": 2,
+     "prompt": "No 5º dia de jejum completo, qual combustível supre boa parte da energia do cérebro?",
+     "options": [
+      {
+       "text": "Corpos cetônicos",
+       "correct": true
+      },
+      {
+       "text": "Ácidos graxos livres",
+       "why": "Atravessam mal a barreira hematoencefálica; não são fonte relevante para o cérebro."
+      },
+      {
+       "text": "Glicose vinda do glicogênio hepático",
+       "why": "O glicogênio hepático acabou por volta do 1º dia."
+      },
+      {
+       "text": "Glicose liberada pelo glicogênio muscular",
+       "why": "O músculo não tem glicose-6-fosfatase: não exporta glicose."
+      }
+     ],
+     "reveal": "O fígado converte o acetil-CoA da β-oxidação em corpos cetônicos, e o cérebro se adapta a usá-los. Isso reduz a necessidade de gliconeogênese a partir de aminoácidos — poupando músculo.",
+     "rule": "combustivel",
+     "tested": "A question describes prolonged starvation and asks for the predominant brain fuel (ketone bodies) or the main source of gluconeogenic substrate (muscle protein)."
+    },
+    {
+     "id": "u1-s10",
+     "type": "predict",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "level": 2,
+     "prompt": "E a hemácia, nesse mesmo 5º dia de jejum, usa principalmente:",
+     "options": [
+      {
+       "text": "Glicose produzida pela gliconeogênese",
+       "correct": true
+      },
+      {
+       "text": "Corpos cetônicos",
+       "why": "Oxidar corpos cetônicos exige mitocôndria (ciclo de Krebs)."
+      },
+      {
+       "text": "Ácidos graxos livres",
+       "why": "A β-oxidação acontece na mitocôndria."
+      },
+      {
+       "text": "Lactato",
+       "why": "A hemácia produz lactato; não o consome."
+      }
+     ],
+     "reveal": "Sem mitocôndria, a hemácia depende 100% da glicose, em qualquer estado nutricional. No jejum, essa glicose vem da gliconeogênese hepática — e o lactato que a hemácia libera volta ao fígado para virar glicose de novo (ciclo de Cori, [[Cori cycle]]).",
+     "rule": "combustivel",
+     "tested": "Vignettes ask which cell relies exclusively on glucose regardless of nutritional state: the red blood cell, which lacks mitochondria."
+    },
+    {
+     "id": "u1-c08",
+     "type": "card",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "pathway": "liver-output",
+     "title": "Duas fontes, uma porta de saída",
+     "body": "No jejum, o fígado exporta glicose por dois caminhos que **convergem na glicose-6-fosfato**:\n- glicogenólise: glicogênio → glicose-1-P → glicose-6-P;\n- gliconeogênese: lactato, alanina, glicerol → … → glicose-6-P.\n\nA saída é uma só: a glicose-6-fosfatase ([[glucose-6-phosphatase]]), no retículo endoplasmático, retira o fosfato e a glicose livre sai pelo GLUT2.\nSó **fígado e rim** têm essa enzima. No músculo, a glicose-6-P fica presa e é usada ali."
+    },
+    {
+     "id": "u1-s11",
+     "type": "sim",
+     "mode": "predict",
+     "pathway": "liver-output",
+     "block": "g6pase",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "level": 2,
+     "shuffle": false,
+     "prompt": "Imagine que falta a glicose-6-fosfatase (a etapa tracejada no diagrama). Em jejum, o que acontece com o **lactato** no sangue?",
+     "options": [
+      {
+       "text": "Sobe",
+       "correct": true
+      },
+      {
+       "text": "Cai",
+       "why": "O lactato só cairia se sua produção caísse; aqui sobra glicose-6-P, que vira mais piruvato."
+      },
+      {
+       "text": "Não muda",
+       "why": "Pense no destino do excesso de glicose-6-P que não consegue sair."
+      }
+     ],
+     "reveal": "A glicose-6-P acumula e **transborda** para as vias laterais:\n- glicólise → piruvato → **lactato**;\n- via das pentoses → ribose-5-P → purinas → **ácido úrico**;\n- lipogênese → **triglicerídeos**.\n\nAo mesmo tempo, a glicose livre não sai → hipoglicemia grave poucas horas após a refeição. É a doença de von Gierke (Unidade 7).",
+     "rule": "bloqueio",
+     "tested": "An infant with fasting hypoglycemia, hepatomegaly, lactic acidosis, hyperuricemia, and hypertriglyceridemia; the question asks for the deficient enzyme or for the mechanism of one laboratory finding."
+    },
+    {
+     "id": "u1-c09",
+     "type": "card",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "title": "A regra-mestra do módulo",
+     "body": "O que você acabou de ver vale para **qualquer** via:\n\n**Bloqueio enzimático → acumula o que vem antes, falta o que vem depois, e o excesso desvia para as vias laterais.**\n\nDiante de uma doença enzimática que você nunca estudou, faça três perguntas:\n1. O que acumula antes do bloqueio?\n2. O que falta depois?\n3. Para onde o excesso consegue escapar?\n\nA clínica e os exames saem dessas respostas — sem decoreba."
+    },
+    {
+     "id": "u1-s12",
+     "type": "sim",
+     "mode": "explore",
+     "pathway": "liver-output",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "prompt": "**Laboratório livre.** Toque numa etapa marcada com ✂ para bloqueá-la; toque de novo para liberar. Compare os três bloqueios: o que acumula, o que falta e para onde o excesso vai."
+    },
+    {
+     "id": "u1-s13",
+     "type": "sim",
+     "mode": "challenge",
+     "pathway": "liver-output",
+     "answer": "gng",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "level": 3,
+     "prompt": "Toque na etapa cujo bloqueio explica este quadro: **glicemia normal nas primeiras horas de jejum**, mas **hipoglicemia por volta de 1 dia** de jejum, com **lactato alto** e sem acúmulo de glicogênio.",
+     "explanation": "Enquanto há glicogênio, a glicogenólise segura a glicemia. Quando ele acaba (por volta de 1 dia), a glicemia passa a depender da gliconeogênese; bloqueada, vem a hipoglicemia — e os substratos (lactato, alanina, glicerol) se acumulam.\n- Bloqueio da glicose-6-fosfatase → hipoglicemia **precoce** (as duas fontes ficam presas) e glicogênio acumulado.\n- Bloqueio da fosforilase → glicogênio acumula, mas a gliconeogênese segura a glicemia.",
+     "rule": "bloqueio",
+     "tested": "A patient becomes hypoglycemic only after prolonged fasting or an alcohol binge (failure of gluconeogenesis), unlike glycogen storage disease type I, which causes hypoglycemia within a few hours of a meal."
+    },
+    {
+     "id": "u1-s14",
+     "type": "mcq",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "level": 3,
+     "prompt": "Mini-vinheta no formato da prova:",
+     "stem": "A 30-year-old man participates in a study of fuel metabolism. After a 24-hour fast, biopsies show that his skeletal muscle still contains a substantial amount of glycogen, whereas his hepatic glycogen is nearly depleted. Although his blood glucose concentration is low-normal, muscle glycogen does not contribute to blood glucose.",
+     "question": "The absence of which of the following enzymes in skeletal muscle best explains this finding?",
+     "options": [
+      {
+       "text": "Glucose-6-phosphatase",
+       "correct": true
+      },
+      {
+       "text": "Glycogen phosphorylase",
+       "why": "O músculo tem fosforilase própria (miofosforilase); sua falta é a doença de McArdle."
+      },
+      {
+       "text": "Hexokinase",
+       "why": "A hexoquinase coloca o fosfato na glicose (entrada); não o retira."
+      },
+      {
+       "text": "Phosphoglucomutase",
+       "why": "Converte glicose-1-P em glicose-6-P; está presente no músculo."
+      },
+      {
+       "text": "Debranching enzyme",
+       "why": "Está presente no músculo; sem ela, o glicogênio ficaria com ramos curtos (doença de Cori)."
+      }
+     ],
+     "reveal": "O músculo quebra glicogênio até glicose-6-P, mas **não tem glicose-6-fosfatase**: a glicose-6-P não sai da célula e é usada na própria glicólise muscular. O glicogênio muscular é reserva **do músculo**, não do corpo.",
+     "rule": "saida-hepatica",
+     "tested": "A question asks why skeletal muscle glycogen cannot maintain blood glucose during fasting (absence of glucose-6-phosphatase)."
+    },
+    {
+     "id": "u1-s15",
+     "type": "flip",
+     "concepts": [
+      "fedfast.switch"
+     ],
+     "rule": "interruptor",
+     "front": "O que glucagon e insulina fazem com as enzimas — e o que significa “fosforilado”?"
+    },
+    {
+     "id": "u1-s16",
+     "type": "flip",
+     "concepts": [
+      "fedfast.glut"
+     ],
+     "rule": "transportador",
+     "front": "Que tipo de transportador usa um tecido que precisa de glicose o tempo todo? E um tecido que armazena?"
+    },
+    {
+     "id": "u1-s17",
+     "type": "flip",
+     "concepts": [
+      "fedfast.fuel"
+     ],
+     "rule": "combustivel",
+     "front": "Quem usa só glicose, quem usa corpos cetônicos e quem não usa ácidos graxos?"
+    },
+    {
+     "id": "u1-s18",
+     "type": "flip",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "rule": "saida-hepatica",
+     "front": "Por onde sai a glicose que o fígado exporta — e por que o músculo não exporta?"
+    },
+    {
+     "id": "u1-s19",
+     "type": "flip",
+     "concepts": [
+      "fedfast.output"
+     ],
+     "rule": "bloqueio",
+     "front": "Regra-mestra: o que acontece antes, depois e ao redor de um bloqueio enzimático?"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "status": "draft",
+   "title": "Glicólise e suas enzimas reguladoras",
+   "short": "U2 · Glicólise",
+   "subtitle": "Onde a via é controlada, por quais sinais, e o que acontece quando ela falha na hemácia",
+   "objectives": [
+    "Comparar hexoquinase e glicoquinase pelo Km.",
+    "Prever a regulação da PFK-1 e o papel da frutose-2,6-bisfosfato.",
+    "Explicar a hemólise da deficiência de piruvato quinase.",
+    "Identificar as etapas irreversíveis e o saldo energético."
+   ],
+   "concepts": [
+    "gly.hkgk",
+    "gly.pfk",
+    "gly.pk",
+    "gly.balance"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u3",
+   "status": "draft",
+   "title": "Destino do piruvato: PDH, lactato e cofatores",
+   "short": "U3 · Piruvato",
+   "subtitle": "Para onde vai o piruvato e o que acontece quando falta um cofator",
+   "objectives": [
+    "Prever o destino do piruvato em cada situação.",
+    "Deduzir as consequências da falta de tiamina e do bloqueio da PDH.",
+    "Explicar o tratamento da deficiência de PDH."
+   ],
+   "concepts": [
+    "pyr.fates",
+    "pyr.pdh",
+    "pyr.thiamine",
+    "pyr.pdhdef",
+    "pyr.lactate"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u4",
+   "status": "draft",
+   "title": "Gliconeogênese (e o efeito do etanol)",
+   "short": "U4 · Gliconeogênese",
+   "subtitle": "Contornar as etapas irreversíveis, o que vira glicose e por que o álcool causa hipoglicemia",
+   "objectives": [
+    "Reconstruir a via a partir da glicólise.",
+    "Dizer o que pode e o que não pode virar glicose.",
+    "Explicar a hipoglicemia e a acidose lática do etanol."
+   ],
+   "concepts": [
+    "gng.bypass",
+    "gng.substrates",
+    "gng.regulation",
+    "gng.ethanol"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u5",
+   "status": "draft",
+   "title": "Via das pentoses e deficiência de G6PD",
+   "short": "U5 · Pentoses e G6PD",
+   "subtitle": "NADPH, ribose e a defesa antioxidante da hemácia",
+   "objectives": [
+    "Separar a fase oxidativa da não oxidativa.",
+    "Listar os usos do NADPH.",
+    "Deduzir o quadro da deficiência de G6PD."
+   ],
+   "concepts": [
+    "ppp.phases",
+    "ppp.nadph",
+    "ppp.g6pd"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u6",
+   "status": "draft",
+   "title": "Glicogênio: síntese, degradação e regulação",
+   "short": "U6 · Glicogênio",
+   "subtitle": "A base de todas as glicogenoses",
+   "objectives": [
+    "Descrever síntese e degradação do glicogênio.",
+    "Contrastar a regulação no fígado e no músculo."
+   ],
+   "concepts": [
+    "glyc.synthesis",
+    "glyc.degradation",
+    "glyc.liver",
+    "glyc.muscle"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u7",
+   "status": "draft",
+   "title": "Doenças de depósito de glicogênio",
+   "short": "U7 · Glicogenoses",
+   "subtitle": "von Gierke, Pompe, Cori e McArdle — com a correlação neuromuscular",
+   "objectives": [
+    "Deduzir o quadro clínico e laboratorial de qualquer glicogenose pela localização da enzima.",
+    "Diferenciar as miopatias metabólicas pelo padrão de esforço."
+   ],
+   "concepts": [
+    "gsd.logic",
+    "gsd.vongierke",
+    "gsd.pompe",
+    "gsd.cori",
+    "gsd.mcardle"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u8",
+   "status": "draft",
+   "title": "Distúrbios da frutose e da galactose",
+   "short": "U8 · Frutose e galactose",
+   "subtitle": "Por que o defeito na 1ª enzima é leve e na 2ª é grave",
+   "objectives": [
+    "Reconhecer o gatilho alimentar de cada distúrbio.",
+    "Explicar o sequestro de fosfato e a catarata por poliol.",
+    "Diferenciar deficiência de lactase das doenças hereditárias."
+   ],
+   "concepts": [
+    "sug.fructose",
+    "sug.hfi",
+    "sug.galactose",
+    "sug.galactosemia",
+    "sug.polyol",
+    "sug.lactase"
+   ],
+   "screens": []
+  },
+  {
+   "id": "u9",
+   "status": "draft",
+   "title": "Integração clínica: hipoglicemia e acidose lática",
+   "short": "U9 · Integração",
+   "subtitle": "Vinhetas de três passos usando o módulo inteiro e a farmacologia",
+   "objectives": [
+    "Classificar a hipoglicemia por insulina, peptídeo C e cetonas.",
+    "Localizar a causa pelo gatilho.",
+    "Separar acidose lática tipo A e tipo B."
+   ],
+   "concepts": [
+    "int.hypo",
+    "int.cpeptide",
+    "int.ketones",
+    "int.trigger",
+    "int.lactic"
+   ],
+   "screens": []
+  }
+ ],
+ "concepts": [
+  {
+   "id": "fedfast.switch",
+   "unit": "u1",
+   "name": "Interruptor insulina × glucagon",
+   "rule": "interruptor",
+   "anki": [
+    {
+     "front": "Glucagon/adrenalina: qual a cascata até as enzimas e o que a fosforilação significa?",
+     "back": "Receptor Gs → adenilato ciclase → AMPc → PKA → fosforila. Fosforilado = modo jejum: enzimas que liberam glicose/combustível ficam ativas; as de armazenamento, inativas."
+    },
+    {
+     "front": "No jejum, a glicogênio fosforilase e a glicogênio sintase hepáticas estão fosforiladas? Ativas?",
+     "back": "As duas fosforiladas (PKA). Fosforilase ATIVA, sintase INATIVA. Mesmo sinal, efeitos opostos: evita ciclo fútil."
+    },
+    {
+     "front": "Como a insulina desliga o modo jejum em minutos?",
+     "back": "Receptor tirosina-quinase → ativa fosfodiesterase (AMPc cai) e proteína fosfatase 1 (retira fosfatos) → modo alimentado."
+    }
+   ]
+  },
+  {
+   "id": "fedfast.glut",
+   "unit": "u1",
+   "name": "Transportadores de glicose (GLUT)",
+   "rule": "transportador",
+   "anki": [
+    {
+     "front": "Quais GLUT não dependem de insulina e onde ficam?",
+     "back": "GLUT1 (hemácia, barreira hematoencefálica), GLUT2 (fígado, célula β, rim, intestino basolateral), GLUT3 (neurônio). Tecidos que precisam de glicose sempre."
+    },
+    {
+     "front": "GLUT4: onde fica e o que o leva à membrana?",
+     "back": "Músculo esquelético, coração e tecido adiposo. Insulina (PI3K/Akt) e também o exercício (AMPK, sem insulina)."
+    },
+    {
+     "front": "Por que o GLUT2 funciona como sensor no fígado e na célula β?",
+     "back": "Km alto e bidirecional: o transporte acompanha a glicemia; só capta muito quando a glicose está alta."
+    }
+   ]
+  },
+  {
+   "id": "fedfast.fuel",
+   "unit": "u1",
+   "name": "Combustível por tecido e linha do tempo do jejum",
+   "rule": "combustivel",
+   "anki": [
+    {
+     "front": "Sequência das fontes de glicose à medida que o jejum se prolonga",
+     "back": "Dieta → glicogenólise hepática → gliconeogênese (domina quando o glicogênio hepático acaba, por volta de 1 dia) → inanição: corpos cetônicos poupam glicose e proteína muscular."
+    },
+    {
+     "front": "Por que a hemácia depende só de glicose?",
+     "back": "Não tem mitocôndria: não oxida ácidos graxos nem corpos cetônicos; vive de glicólise anaeróbia (→ lactato)."
+    },
+    {
+     "front": "Por que o fígado não usa os corpos cetônicos que produz?",
+     "back": "Não tem succinil-CoA:3-cetoácido CoA transferase (tioforase), que ativa o acetoacetato."
+    }
+   ]
+  },
+  {
+   "id": "fedfast.output",
+   "unit": "u1",
+   "name": "Fígado exportador: a glicose-6-fosfatase como porta de saída",
+   "rule": "saida-hepatica",
+   "rules": [
+    "bloqueio"
+   ],
+   "anki": [
+    {
+     "front": "Qual enzima é a saída comum da glicogenólise e da gliconeogênese? Onde existe?",
+     "back": "Glicose-6-fosfatase (no retículo endoplasmático). Só fígado e rim; o músculo não tem e não exporta glicose."
+    },
+    {
+     "front": "Regra-mestra do bloqueio enzimático",
+     "back": "Acumula o que vem antes, falta o que vem depois, e o excesso desvia para as vias laterais."
+    },
+    {
+     "front": "Sem glicose-6-fosfatase: o que acumula, o que falta e para onde desvia?",
+     "back": "Acumula glicose-6-P (e glicogênio); falta glicose livre (hipoglicemia de jejum); desvia para glicólise (↑lactato), via das pentoses (↑ácido úrico) e lipogênese (↑triglicerídeos)."
+    }
+   ]
+  },
+  {
+   "id": "gly.hkgk",
+   "unit": "u2",
+   "name": "Hexoquinase × glicoquinase",
+   "rule": "km"
+  },
+  {
+   "id": "gly.pfk",
+   "unit": "u2",
+   "name": "PFK-1 e frutose-2,6-bisfosfato",
+   "rule": "limitante"
+  },
+  {
+   "id": "gly.pk",
+   "unit": "u2",
+   "name": "Piruvato quinase e deficiência de PK",
+   "rule": "hemacia"
+  },
+  {
+   "id": "gly.balance",
+   "unit": "u2",
+   "name": "Balanço da glicólise e etapas irreversíveis",
+   "rule": "irreversivel"
+  },
+  {
+   "id": "pyr.fates",
+   "unit": "u3",
+   "name": "Os quatro destinos do piruvato",
+   "rule": "nad"
+  },
+  {
+   "id": "pyr.pdh",
+   "unit": "u3",
+   "name": "Complexo PDH: cofatores e regulação",
+   "rule": "cofator"
+  },
+  {
+   "id": "pyr.thiamine",
+   "unit": "u3",
+   "name": "Deficiência de tiamina",
+   "rule": "tiamina-antes"
+  },
+  {
+   "id": "pyr.pdhdef",
+   "unit": "u3",
+   "name": "Deficiência congênita de PDH",
+   "rule": "tratar-bloqueio"
+  },
+  {
+   "id": "pyr.lactate",
+   "unit": "u3",
+   "name": "LDH, lactato e ciclo de Cori",
+   "rule": "nad"
+  },
+  {
+   "id": "gng.bypass",
+   "unit": "u4",
+   "name": "Enzimas de contorno da gliconeogênese",
+   "rule": "irreversivel"
+  },
+  {
+   "id": "gng.substrates",
+   "unit": "u4",
+   "name": "O que vira (e o que não vira) glicose",
+   "rule": "acetilcoa-nao-volta"
+  },
+  {
+   "id": "gng.regulation",
+   "unit": "u4",
+   "name": "Regulação recíproca glicólise × gliconeogênese",
+   "rule": "acetilcoa-sinal"
+  },
+  {
+   "id": "gng.ethanol",
+   "unit": "u4",
+   "name": "Etanol e excesso de NADH",
+   "rule": "nadh"
+  },
+  {
+   "id": "ppp.phases",
+   "unit": "u5",
+   "name": "Fases oxidativa e não oxidativa da via das pentoses",
+   "rule": "pentoses-demanda"
+  },
+  {
+   "id": "ppp.nadph",
+   "unit": "u5",
+   "name": "Para que serve o NADPH",
+   "rule": "pentoses-demanda"
+  },
+  {
+   "id": "ppp.g6pd",
+   "unit": "u5",
+   "name": "Deficiência de G6PD",
+   "rule": "nadph-hemacia"
+  },
+  {
+   "id": "glyc.synthesis",
+   "unit": "u6",
+   "name": "Síntese de glicogênio",
+   "rule": "ramos"
+  },
+  {
+   "id": "glyc.degradation",
+   "unit": "u6",
+   "name": "Degradação do glicogênio",
+   "rule": "ramos"
+  },
+  {
+   "id": "glyc.liver",
+   "unit": "u6",
+   "name": "Regulação do glicogênio no fígado",
+   "rule": "figado-musculo"
+  },
+  {
+   "id": "glyc.muscle",
+   "unit": "u6",
+   "name": "Regulação do glicogênio no músculo",
+   "rule": "figado-musculo"
+  },
+  {
+   "id": "gsd.logic",
+   "unit": "u7",
+   "name": "Lógica das glicogenoses: onde está a enzima",
+   "rule": "local"
+  },
+  {
+   "id": "gsd.vongierke",
+   "unit": "u7",
+   "name": "Doença de von Gierke (tipo I)",
+   "rule": "encruzilhada"
+  },
+  {
+   "id": "gsd.pompe",
+   "unit": "u7",
+   "name": "Doença de Pompe (tipo II)",
+   "rule": "local"
+  },
+  {
+   "id": "gsd.cori",
+   "unit": "u7",
+   "name": "Doença de Cori (tipo III)",
+   "rule": "marcador"
+  },
+  {
+   "id": "gsd.mcardle",
+   "unit": "u7",
+   "name": "Doença de McArdle (tipo V)",
+   "rule": "marcador"
+  },
+  {
+   "id": "sug.fructose",
+   "unit": "u8",
+   "name": "Metabolismo da frutose",
+   "rule": "primeira-segunda"
+  },
+  {
+   "id": "sug.hfi",
+   "unit": "u8",
+   "name": "Frutosúria essencial × intolerância hereditária à frutose",
+   "rule": "sequestro-fosfato"
+  },
+  {
+   "id": "sug.galactose",
+   "unit": "u8",
+   "name": "Metabolismo da galactose",
+   "rule": "primeira-segunda"
+  },
+  {
+   "id": "sug.galactosemia",
+   "unit": "u8",
+   "name": "Deficiência de galactoquinase × galactosemia clássica",
+   "rule": "primeira-segunda"
+  },
+  {
+   "id": "sug.polyol",
+   "unit": "u8",
+   "name": "Via do poliol (sorbitol)",
+   "rule": "poliol"
+  },
+  {
+   "id": "sug.lactase",
+   "unit": "u8",
+   "name": "Deficiência de lactase",
+   "rule": "nao-absorvido"
+  },
+  {
+   "id": "int.hypo",
+   "unit": "u9",
+   "name": "Reconhecer a hipoglicemia",
+   "rule": "adrenergico"
+  },
+  {
+   "id": "int.cpeptide",
+   "unit": "u9",
+   "name": "Insulina × peptídeo C × sulfonilureia",
+   "rule": "peptideo-c"
+  },
+  {
+   "id": "int.ketones",
+   "unit": "u9",
+   "name": "Cetonas na hipoglicemia",
+   "rule": "cetonas"
+  },
+  {
+   "id": "int.trigger",
+   "unit": "u9",
+   "name": "Hipoglicemia pelo gatilho e teste do glucagon",
+   "rule": "glucagon-teste"
+  },
+  {
+   "id": "int.lactic",
+   "unit": "u9",
+   "name": "Acidose lática tipo A × tipo B",
+   "rule": "lactato"
+  }
+ ],
+ "rules": [
+  {
+   "id": "interruptor",
+   "unit": "u1",
+   "text": "Glucagon e adrenalina → AMPc → PKA → **fosforila**; insulina → fosfatases → **desfosforila**. Fosforilado = **modo jejum**: liga quem libera glicose ou combustível e desliga quem armazena."
+  },
+  {
+   "id": "transportador",
+   "unit": "u1",
+   "text": "Tecido que precisa de glicose o tempo todo (cérebro, hemácia) usa transportador **independente de insulina**; tecido que armazena (músculo, gordura) depende de insulina (**GLUT4**)."
+  },
+  {
+   "id": "combustivel",
+   "unit": "u1",
+   "text": "Sem mitocôndria = só glicose (hemácia). O cérebro usa glicose ou corpos cetônicos, **nunca ácidos graxos**. O fígado fabrica corpos cetônicos, mas não os consome."
+  },
+  {
+   "id": "saida-hepatica",
+   "unit": "u1",
+   "text": "Glicogenólise e gliconeogênese convergem na glicose-6-P; a porta de saída é a **glicose-6-fosfatase**, que só fígado e rim têm. O músculo guarda a glicose para si."
+  },
+  {
+   "id": "bloqueio",
+   "unit": "u1",
+   "text": "**Bloqueio enzimático** → acumula o que vem antes, falta o que vem depois, e o excesso desvia para as vias laterais."
+  },
+  {
+   "id": "km",
+   "unit": "u2",
+   "text": "Km baixo = enzima de quem **precisa** (trabalha com pouco substrato); Km alto = enzima de quem **armazena ou mede** a glicemia (só trabalha com excesso)."
+  },
+  {
+   "id": "limitante",
+   "unit": "u2",
+   "text": "A enzima limitante é freada por sinais de **abundância** (ATP, citrato) e acelerada por sinais de **falta** (AMP)."
+  },
+  {
+   "id": "irreversivel",
+   "unit": "u2",
+   "text": "As etapas **irreversíveis** são os pontos de controle — e são exatamente as que a via inversa precisa contornar com enzimas próprias."
+  },
+  {
+   "id": "hemacia",
+   "unit": "u2",
+   "text": "A hemácia vive só de glicólise: defeito glicolítico → falta ATP → membrana rígida → **hemólise**."
+  },
+  {
+   "id": "nad",
+   "unit": "u3",
+   "text": "A glicólise só continua se o **NAD⁺** for regenerado; sem O₂ ou sem mitocôndria, o piruvato vira lactato para devolvê-lo."
+  },
+  {
+   "id": "cofator",
+   "unit": "u3",
+   "text": "Enzimas que dividem o mesmo **cofator** falham juntas: sem tiamina caem PDH, α-cetoglutarato desidrogenase, BCKDH e transcetolase."
+  },
+  {
+   "id": "tiamina-antes",
+   "unit": "u3",
+   "text": "Empurrar substrato para uma via travada piora o quadro: no etilista ou desnutrido, **tiamina antes da glicose**."
+  },
+  {
+   "id": "tratar-bloqueio",
+   "unit": "u3",
+   "text": "Tratar um bloqueio = **restringir** o que entra antes dele e **oferecer** o que entra depois."
+  },
+  {
+   "id": "acetilcoa-nao-volta",
+   "unit": "u4",
+   "text": "**Acetil-CoA não volta a ser glicose** (a PDH é irreversível): ácido graxo de cadeia par não faz gliconeogênese; glicerol e cadeia ímpar (propionil-CoA) fazem."
+  },
+  {
+   "id": "acetilcoa-sinal",
+   "unit": "u4",
+   "text": "Acetil-CoA alto = gordura sendo queimada = jejum: ele **desliga a PDH e liga a piruvato carboxilase**, mandando o piruvato fazer glicose."
+  },
+  {
+   "id": "nadh",
+   "unit": "u4",
+   "text": "Excesso de **NADH** (etanol) empurra reações reversíveis para o lado reduzido: piruvato→lactato, OAA→malato, DHAP→glicerol-3-P → hipoglicemia, acidose lática e esteatose."
+  },
+  {
+   "id": "pentoses-demanda",
+   "unit": "u5",
+   "text": "A via das pentoses roda conforme a demanda: precisa de **NADPH** → fase oxidativa (irreversível, G6PD); precisa só de **ribose** → fase não oxidativa (reversível, transcetolase)."
+  },
+  {
+   "id": "nadph-hemacia",
+   "unit": "u5",
+   "text": "A hemácia tem **uma única fonte de NADPH**: a via das pentoses. Sem G6PD, a glutationa não é regenerada → estresse oxidativo → corpúsculos de Heinz → hemólise."
+  },
+  {
+   "id": "figado-musculo",
+   "unit": "u6",
+   "text": "O **fígado** quebra glicogênio para o corpo (obedece glucagon e glicemia); o **músculo** quebra para si (obedece adrenalina, Ca²⁺ da contração e AMP)."
+  },
+  {
+   "id": "ramos",
+   "unit": "u6",
+   "text": "A fosforilase só corta ligações **α-1,4** e para perto do ramo; sem a enzima desramificadora sobram ramos curtos (**dextrina limite**)."
+  },
+  {
+   "id": "encruzilhada",
+   "unit": "u6",
+   "text": "A **glicose-6-P é a encruzilhada**: quando acumula, transborda para glicólise (lactato), via das pentoses (purinas → ácido úrico) e síntese de lipídios."
+  },
+  {
+   "id": "local",
+   "unit": "u7",
+   "text": "O **local** da enzima define a clínica: fígado → hipoglicemia de jejum + hepatomegalia; músculo → intolerância ao exercício; lisossomo → acúmulo em coração e músculo com glicemia normal."
+  },
+  {
+   "id": "marcador",
+   "unit": "u7",
+   "text": "Um marcador só sobe se **a via que o produz** estiver funcionando: sem quebrar glicogênio muscular não há lactato; com gliconeogênese intacta, o lactato é consumido."
+  },
+  {
+   "id": "primeira-segunda",
+   "unit": "u8",
+   "text": "Defeito na **1ª enzima** (quinase) é leve — só o açúcar livre acumula; defeito na **2ª** é grave — acumula o intermediário fosforilado."
+  },
+  {
+   "id": "sequestro-fosfato",
+   "unit": "u8",
+   "text": "Açúcar fosforilado que não segue adiante **sequestra fosfato**: Pi cai → ATP cai → glicogenólise e gliconeogênese param → hipoglicemia."
+  },
+  {
+   "id": "poliol",
+   "unit": "u8",
+   "text": "Açúcar em excesso + **aldose redutase** → poliol (sorbitol, galactitol) preso na célula → atrai água → catarata e lesão de retina, nervo e rim."
+  },
+  {
+   "id": "nao-absorvido",
+   "unit": "u8",
+   "text": "Açúcar **não absorvido** no intestino delgado puxa água (diarreia osmótica) e é fermentado no cólon (gases, H₂ expirado, fezes ácidas) — sem lesão de fígado ou cristalino."
+  },
+  {
+   "id": "adrenergico",
+   "unit": "u9",
+   "text": "Sintoma **adrenérgico** = resposta hormonal à hipoglicemia; **neuroglicopênico** = cérebro sem glicose. Betabloqueador mascara o adrenérgico (a sudorese, colinérgica, persiste)."
+  },
+  {
+   "id": "peptideo-c",
+   "unit": "u9",
+   "text": "Insulina endógena sai junto com **peptídeo C** (1:1): insulina alta + peptídeo C baixo = insulina exógena; ambos altos = insulinoma ou sulfonilureia."
+  },
+  {
+   "id": "cetonas",
+   "unit": "u9",
+   "text": "Corpos cetônicos **baixos** durante hipoglicemia = algo impede lipólise/β-oxidação: excesso de insulina ou defeito de oxidação de ácidos graxos."
+  },
+  {
+   "id": "lactato",
+   "unit": "u9",
+   "text": "O lactato sobe quando o piruvato **não pode ser oxidado** (falta O₂, PDH, tiamina ou cadeia respiratória) ou quando o fígado **não consegue reciclá-lo**."
+  },
+  {
+   "id": "glucagon-teste",
+   "unit": "u9",
+   "text": "Glucagon só eleva a glicemia se houver **glicogênio hepático** e a via até a glicose livre estiver intacta."
+  }
+ ],
+ "pathways": {
+  "liver-output": {
+   "title": "Fígado: de onde vem a glicose do jejum",
+   "cols": 3,
+   "nodes": [
+    {
+     "id": "glycogen",
+     "label": "Glicogênio hepático",
+     "col": 0,
+     "row": 0
+    },
+    {
+     "id": "precursors",
+     "label": "Lactato, alanina, glicerol",
+     "col": 1,
+     "row": 0
+    },
+    {
+     "id": "g1p",
+     "label": "Glicose-1-P",
+     "col": 0,
+     "row": 1
+    },
+    {
+     "id": "glc",
+     "label": "Glicose no sangue",
+     "col": 2,
+     "row": 1,
+     "kind": "output"
+    },
+    {
+     "id": "g6p",
+     "label": "Glicose-6-P",
+     "col": 1,
+     "row": 2
+    },
+    {
+     "id": "lactate",
+     "label": "Lactato (glicólise)",
+     "col": 0,
+     "row": 3
+    },
+    {
+     "id": "urate",
+     "label": "Ácido úrico (via das pentoses)",
+     "col": 1,
+     "row": 3
+    },
+    {
+     "id": "tg",
+     "label": "Triglicerídeos (lipogênese)",
+     "col": 2,
+     "row": 3
+    }
+   ],
+   "edges": [
+    {
+     "id": "phos",
+     "from": "glycogen",
+     "to": "g1p",
+     "enzyme": "Glicogênio fosforilase",
+     "short": "Fosforilase",
+     "blockable": true
+    },
+    {
+     "id": "pgm",
+     "from": "g1p",
+     "to": "g6p"
+    },
+    {
+     "id": "gng",
+     "from": "precursors",
+     "to": "g6p",
+     "enzyme": "Gliconeogênese (várias enzimas)",
+     "short": "Gliconeogênese",
+     "blockable": true
+    },
+    {
+     "id": "g6pase",
+     "from": "g6p",
+     "to": "glc",
+     "enzyme": "Glicose-6-fosfatase",
+     "blockable": true,
+     "labelDx": 20
+    },
+    {
+     "id": "s-lac",
+     "from": "g6p",
+     "to": "lactate",
+     "side": true
+    },
+    {
+     "id": "s-ura",
+     "from": "g6p",
+     "to": "urate",
+     "side": true
+    },
+    {
+     "id": "s-tg",
+     "from": "g6p",
+     "to": "tg",
+     "side": true
+    }
+   ],
+   "blocks": {
+    "phos": {
+     "clinical": "Hipoglicemia de jejum **leve** (a gliconeogênese compensa) e fígado aumentado pelo glicogênio que não sai.",
+     "labs": "Lactato e ácido úrico normais — a glicose-6-P não se acumula.",
+     "disease": "Glicogenose hepática por falta de fosforilase (tipo VI, de Hers) — pouco cobrada.",
+     "rule": "bloqueio"
+    },
+    "gng": {
+     "lacks": [
+      "glc"
+     ],
+     "note": "A glicose do sangue só falta **depois que o glicogênio acaba** (por volta de 1 dia de jejum): antes disso, a glicogenólise segura a glicemia.",
+     "clinical": "Hipoglicemia após jejum prolongado ou doença com pouca ingestão; fígado de tamanho normal.",
+     "labs": "Lactato alto (o substrato não é reciclado); cetonas presentes.",
+     "disease": "Etanol (excesso de NADH) é a causa clássica; defeitos raros, como a falta de frutose-1,6-bisfosfatase, têm o mesmo raciocínio.",
+     "rule": "bloqueio"
+    },
+    "g6pase": {
+     "accumulates": [
+      "g6p",
+      "glycogen"
+     ],
+     "clinical": "Hipoglicemia **grave poucas horas** após a refeição; hepatomegalia (e rins aumentados).",
+     "labs": "↑ lactato, ↑ ácido úrico, ↑ triglicerídeos. O glucagon sobe o lactato, mas não a glicose.",
+     "disease": "Doença de von Gierke (glicogenose tipo I) — Unidade 7.",
+     "rule": "bloqueio"
+    }
+   }
+  }
+ },
+ "glossary": [
+  {
+   "id": "glycogen phosphorylase",
+   "en": "glycogen phosphorylase",
+   "pt": "glicogênio fosforilase",
+   "def": "Remove glicoses das pontas do glicogênio (ligações α-1,4), liberando glicose-1-fosfato. Etapa limitante da glicogenólise; usa piridoxal-fosfato (vitamina B6)."
+  },
+  {
+   "id": "glycogen synthase",
+   "en": "glycogen synthase",
+   "pt": "glicogênio sintase",
+   "def": "Etapa limitante da síntese de glicogênio: adiciona glicose (vinda da UDP-glicose) em ligação α-1,4."
+  },
+  {
+   "id": "receptor tyrosine kinase",
+   "en": "receptor tyrosine kinase",
+   "pt": "receptor tirosina-quinase",
+   "def": "Receptor cuja parte intracelular fosforila tirosinas; é o receptor da insulina e do IGF-1."
+  },
+  {
+   "id": "gs protein",
+   "en": "Gs protein",
+   "pt": "proteína Gs",
+   "def": "Proteína G estimulatória: ativa a adenilato ciclase e eleva o AMPc (receptores de glucagon e β-adrenérgicos)."
+  },
+  {
+   "id": "camp",
+   "en": "cyclic AMP (cAMP)",
+   "pt": "AMP cíclico (AMPc)",
+   "def": "Segundo mensageiro que ativa a proteína quinase A.",
+   "aliases": [
+    "cAMP",
+    "AMPc"
+   ]
+  },
+  {
+   "id": "protein kinase a",
+   "en": "protein kinase A (PKA)",
+   "pt": "proteína quinase A (PKA)",
+   "def": "Quinase ativada pelo AMPc; fosforila enzimas do metabolismo e coloca o fígado em modo jejum.",
+   "aliases": [
+    "PKA"
+   ]
+  },
+  {
+   "id": "phosphodiesterase",
+   "en": "phosphodiesterase",
+   "pt": "fosfodiesterase",
+   "def": "Degrada o AMPc em AMP, desligando a PKA. A insulina a ativa; metilxantinas (teofilina, cafeína) a inibem."
+  },
+  {
+   "id": "protein phosphatase 1",
+   "en": "protein phosphatase 1",
+   "pt": "proteína fosfatase 1",
+   "def": "Remove fosfatos das enzimas do metabolismo do glicogênio; ativada pela insulina."
+  },
+  {
+   "id": "hormone-sensitive lipase",
+   "en": "hormone-sensitive lipase",
+   "pt": "lipase hormônio-sensível",
+   "def": "Enzima do adipócito que libera ácidos graxos e glicerol dos triglicerídeos; ativada por fosforilação (catecolaminas), inibida pela insulina."
+  },
+  {
+   "id": "acetyl-coa carboxylase",
+   "en": "acetyl-CoA carboxylase",
+   "pt": "acetil-CoA carboxilase",
+   "def": "Etapa limitante da síntese de ácidos graxos (acetil-CoA → malonil-CoA); usa biotina; inativada por fosforilação."
+  },
+  {
+   "id": "glucose transporter",
+   "en": "glucose transporter (GLUT)",
+   "pt": "transportador de glicose (GLUT)",
+   "def": "Família de transportadores por difusão facilitada (sem gasto de ATP). Só o GLUT4 é recrutado pela insulina.",
+   "aliases": [
+    "GLUT"
+   ]
+  },
+  {
+   "id": "sglt1",
+   "en": "sodium-glucose cotransporter 1 (SGLT1)",
+   "pt": "cotransportador sódio-glicose 1 (SGLT1)",
+   "def": "Transportador apical do enterócito que absorve glicose e galactose junto com Na⁺ (transporte ativo secundário).",
+   "aliases": [
+    "SGLT1"
+   ]
+  },
+  {
+   "id": "glucose-6-phosphatase",
+   "en": "glucose-6-phosphatase",
+   "pt": "glicose-6-fosfatase",
+   "def": "Enzima do retículo endoplasmático de fígado e rim que retira o fosfato da glicose-6-P, liberando glicose livre para o sangue. Sua falta causa a doença de von Gierke."
+  },
+  {
+   "id": "glycogenolysis",
+   "en": "glycogenolysis",
+   "pt": "glicogenólise",
+   "def": "Quebra do glicogênio, liberando glicose-1-fosfato (e um pouco de glicose livre nos pontos de ramificação)."
+  },
+  {
+   "id": "gluconeogenesis",
+   "en": "gluconeogenesis",
+   "pt": "gliconeogênese",
+   "def": "Síntese de glicose nova a partir de lactato, alanina e outros aminoácidos, glicerol e propionato; ocorre no fígado e no rim."
+  },
+  {
+   "id": "ketone bodies",
+   "en": "ketone bodies",
+   "pt": "corpos cetônicos",
+   "def": "Acetoacetato e β-hidroxibutirato, feitos pelo fígado a partir de acetil-CoA no jejum prolongado; combustível para cérebro, coração e músculo."
+  },
+  {
+   "id": "thiophorase",
+   "en": "succinyl-CoA:3-ketoacid CoA transferase (thiophorase)",
+   "pt": "succinil-CoA:3-cetoácido CoA transferase (tioforase)",
+   "def": "Ativa o acetoacetato (acetoacetil-CoA) para ser usado como combustível. O fígado não tem — por isso não consome os corpos cetônicos que produz.",
+   "aliases": [
+    "tioforase"
+   ]
+  },
+  {
+   "id": "cori cycle",
+   "en": "Cori cycle",
+   "pt": "ciclo de Cori",
+   "def": "Lactato produzido pela hemácia e pelo músculo vai ao fígado e volta ao sangue como glicose (custa ATP ao fígado)."
+  },
+  {
+   "id": "fed state",
+   "en": "fed state",
+   "pt": "estado alimentado",
+   "def": "Horas após uma refeição: insulina predomina; o corpo armazena glicogênio e gordura."
+  },
+  {
+   "id": "fasting state",
+   "en": "fasting state",
+   "pt": "estado de jejum",
+   "def": "Glucagon predomina; o fígado libera glicose (glicogenólise e depois gliconeogênese) e o tecido adiposo libera ácidos graxos."
+  },
+  {
+   "id": "starvation",
+   "en": "starvation",
+   "pt": "inanição",
+   "def": "Jejum de vários dias: corpos cetônicos viram combustível importante do cérebro e a quebra de proteína muscular diminui."
+  },
+  {
+   "id": "hexokinase",
+   "en": "hexokinase",
+   "pt": "hexoquinase",
+   "def": "Fosforila a glicose em glicose-6-P na maioria dos tecidos; Km baixo; inibida pela glicose-6-P."
+  },
+  {
+   "id": "glucokinase",
+   "en": "glucokinase",
+   "pt": "glicoquinase",
+   "def": "Hexoquinase do fígado e da célula β: Km alto, induzida pela insulina; funciona como sensor de glicose."
+  },
+  {
+   "id": "phosphorylase kinase",
+   "en": "phosphorylase kinase",
+   "pt": "fosforilase quinase",
+   "def": "Fosforila e ativa a glicogênio fosforilase; ativada pela PKA e, no músculo, pelo Ca²⁺ (tem subunidade calmodulina)."
+  },
+  {
+   "id": "ampk",
+   "en": "AMP-activated protein kinase (AMPK)",
+   "pt": "proteína quinase ativada por AMP (AMPK)",
+   "def": "Sensor de baixa energia; no músculo em contração, leva o GLUT4 à membrana sem precisar de insulina.",
+   "aliases": [
+    "AMPK"
+   ]
+  },
+  {
+   "id": "pyruvate dehydrogenase",
+   "en": "pyruvate dehydrogenase complex (PDH)",
+   "pt": "complexo piruvato desidrogenase (PDH)",
+   "def": "Converte piruvato em acetil-CoA na mitocôndria (irreversível). Cofatores: tiamina (B1), FAD (B2), NAD⁺ (B3), CoA (B5) e ácido lipoico.",
+   "aliases": [
+    "PDH"
+   ]
+  },
+  {
+   "id": "thiamine",
+   "en": "thiamine (vitamin B1)",
+   "pt": "tiamina (vitamina B1)",
+   "def": "Como tiamina pirofosfato, é cofator da PDH, α-cetoglutarato desidrogenase, BCKDH e transcetolase. A falta causa Wernicke-Korsakoff e beribéri.",
+   "aliases": [
+    "tiamina",
+    "thiamine"
+   ]
+  },
+  {
+   "id": "lactic acidosis",
+   "en": "lactic acidosis",
+   "pt": "acidose lática",
+   "def": "Acidose metabólica com ânion gap aumentado por acúmulo de lactato."
+  },
+  {
+   "id": "hypoglycemia",
+   "en": "hypoglycemia",
+   "pt": "hipoglicemia",
+   "def": "Glicose baixa com sintomas que melhoram ao corrigi-la (tríade de Whipple)."
+  },
+  {
+   "id": "g6pd",
+   "en": "glucose-6-phosphate dehydrogenase (G6PD)",
+   "pt": "glicose-6-fosfato desidrogenase (G6PD)",
+   "def": "Enzima limitante da via das pentoses; produz NADPH. Sua deficiência (ligada ao X) causa hemólise após estresse oxidativo.",
+   "aliases": [
+    "G6PD"
+   ]
+  },
+  {
+   "id": "c-peptide",
+   "en": "C-peptide",
+   "pt": "peptídeo C",
+   "def": "Fragmento liberado junto com a insulina ao clivar a pró-insulina (1:1); marca a produção endógena.",
+   "aliases": [
+    "peptídeo C"
+   ]
+  },
+  {
+   "id": "limit dextrin",
+   "en": "limit dextrin",
+   "pt": "dextrina limite",
+   "def": "Glicogênio com ramos curtos que sobra quando a fosforilase age sem a enzima desramificadora."
+  },
+  {
+   "id": "debranching enzyme",
+   "en": "debranching enzyme",
+   "pt": "enzima desramificadora",
+   "def": "Transfere 3 glicoses do ramo (4-α-glucanotransferase) e libera a última como glicose livre (α-1,6-glicosidase). Falta na doença de Cori."
+  },
+  {
+   "id": "aldolase b",
+   "en": "aldolase B",
+   "pt": "aldolase B",
+   "def": "Cliva frutose-1-fosfato no fígado; sua falta causa intolerância hereditária à frutose."
+  },
+  {
+   "id": "galt",
+   "en": "galactose-1-phosphate uridyltransferase (GALT)",
+   "pt": "galactose-1-fosfato uridiltransferase (GALT)",
+   "def": "Converte galactose-1-P em UDP-galactose; sua falta causa galactosemia clássica.",
+   "aliases": [
+    "GALT"
+   ]
+  },
+  {
+   "id": "aldose reductase",
+   "en": "aldose reductase",
+   "pt": "aldose redutase",
+   "def": "Reduz glicose a sorbitol e galactose a galactitol (via do poliol)."
+  },
+  {
+   "id": "myophosphorylase",
+   "en": "myophosphorylase",
+   "pt": "miofosforilase",
+   "def": "Glicogênio fosforilase do músculo esquelético; sua falta causa a doença de McArdle."
+  },
+  {
+   "id": "acid maltase",
+   "en": "acid α-glucosidase (acid maltase)",
+   "pt": "α-glicosidase ácida (maltase ácida)",
+   "def": "Enzima lisossomal que degrada glicogênio; sua falta causa a doença de Pompe."
+  }
+ ],
+ "questions": [
+  {
+   "id": "q-u1-sw-1",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 1,
+   "rule": "interruptor",
+   "card": "u1-c02",
+   "stem": "A researcher incubates isolated hepatocytes with glucagon and then measures the activities of several enzymes of carbohydrate and lipid metabolism.",
+   "question": "Glucagon most likely increases the activity of which of the following enzymes by promoting its phosphorylation?",
+   "options": [
+    {
+     "text": "Acetyl-CoA carboxylase",
+     "why": "Enzima de **armazenamento** (síntese de ácidos graxos): fosforilada, fica inativa.",
+     "wouldBe": "a pergunta pedisse a enzima da lipogênese ativada no estado alimentado (insulina, citrato)."
+    },
+    {
+     "text": "Glucokinase",
+     "why": "Não é regulada por fosforilação pela PKA: é induzida pela insulina e, quando a glicose cai, fica retida no núcleo por uma proteína reguladora.",
+     "wouldBe": "a pergunta fosse sobre a enzima hepática de Km alto induzida pela insulina."
+    },
+    {
+     "text": "Glycogen phosphorylase",
+     "correct": true,
+     "why": "Glucagon → receptor ligado a Gs → AMPc → PKA → fosforilase quinase → fosforila a glicogênio fosforilase, que fica **ativa**. É uma enzima que libera glicose: fosforilado = modo jejum."
+    },
+    {
+     "text": "Glycogen synthase",
+     "why": "É fosforilada pela mesma cascata, mas a fosforilação a **inativa** — ela armazena.",
+     "wouldBe": "a pergunta pedisse uma enzima que a insulina ativa por desfosforilação."
+    },
+    {
+     "text": "Pyruvate kinase (hepatic isoform)",
+     "why": "A piruvato quinase do fígado é fosforilada pela PKA no jejum e fica **inativa**, para o fosfoenolpiruvato seguir para a gliconeogênese.",
+     "wouldBe": "a pergunta pedisse uma enzima da glicólise hepática inibida pelo glucagon."
+    }
+   ],
+   "tested": "Glucagon or epinephrine exposure followed by a question about which enzyme becomes active when phosphorylated (glycogen phosphorylase, hormone-sensitive lipase)."
+  },
+  {
+   "id": "q-u1-sw-2",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 2,
+   "rule": "interruptor",
+   "card": "u1-c02",
+   "stem": "A 34-year-old man is brought to the emergency department after a motor vehicle collision. His pulse is 128/min, and blood pressure is 84/50 mm Hg. He has no history of diabetes mellitus. Serum glucose concentration is 168 mg/dL. Increased hepatic glycogenolysis contributes to his hyperglycemia.",
+   "question": "Which of the following best describes the state of hepatic glycogen synthase in this patient?",
+   "options": [
+    {
+     "text": "Allosterically inhibited by glucose-6-phosphate",
+     "why": "A glicose-6-P **ativa** a sintase alostericamente (sinal de abundância); não a inibe.",
+     "wouldBe": "a pergunta fosse sobre a hexoquinase, que é inibida pela glicose-6-P."
+    },
+    {
+     "text": "Dephosphorylated and active",
+     "why": "Esse é o estado depois de uma refeição, com insulina predominando.",
+     "wouldBe": "o paciente estivesse no estado alimentado."
+    },
+    {
+     "text": "Dephosphorylated and inactive",
+     "why": "Desfosforilada, a sintase fica ativa; essa combinação não descreve o estado regulado dela.",
+     "wouldBe": "a pergunta fosse sobre a glicogênio fosforilase em um paciente alimentado (desfosforilada = inativa)."
+    },
+    {
+     "text": "Phosphorylated and active",
+     "why": "A fosforilação liga apenas as enzimas que servem ao jejum e ao estresse; a sintase armazena.",
+     "wouldBe": "a pergunta fosse sobre a glicogênio fosforilase."
+    },
+    {
+     "text": "Phosphorylated and inactive",
+     "correct": true,
+     "why": "Trauma com choque → adrenalina e glucagon altos → AMPc → PKA. A PKA fosforila a glicogênio sintase, que fica **inativa**: o fígado para de armazenar enquanto libera glicose (hiperglicemia de estresse)."
+    }
+   ],
+   "tested": "A stressed or fasting patient (trauma, sepsis, hypoglycemia) and a question about the phosphorylation and activity state of glycogen synthase or phosphorylase."
+  },
+  {
+   "id": "q-u1-sw-3",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 3,
+   "rule": "interruptor",
+   "card": "u1-c03",
+   "stem": "A 45-year-old woman with type 1 diabetes mellitus has not taken insulin for 2 days and now has polyuria and fatigue. Her serum glucose concentration is 410 mg/dL. After an intravenous insulin infusion is started, the activity of hepatic glycogen phosphorylase decreases within minutes, before any change in the amount of enzyme protein.",
+   "question": "Which of the following actions of insulin most directly explains the rapid decrease in phosphorylase activity?",
+   "options": [
+    {
+     "text": "Activation of adenylyl cyclase",
+     "why": "Aumentaria o AMPc e a PKA — é o efeito do glucagon, não da insulina.",
+     "wouldBe": "a pergunta fosse sobre o mecanismo do glucagon ou da adrenalina via receptor β."
+    },
+    {
+     "text": "Activation of protein phosphatase 1",
+     "correct": true,
+     "why": "A insulina ativa a proteína fosfatase 1, que retira o fosfato da fosforilase (e da fosforilase quinase) e a inativa em minutos. Ao mesmo tempo ativa a fosfodiesterase, que baixa o AMPc."
+    },
+    {
+     "text": "Increased transcription of the glycogen phosphorylase gene",
+     "why": "Mudar a quantidade de enzima leva horas — e o enunciado diz que o efeito veio em minutos, sem mudar a quantidade.",
+     "wouldBe": "a pergunta fosse sobre um efeito lento por indução gênica (como o cortisol aumentando a PEPCK)."
+    },
+    {
+     "text": "Inhibition of phosphodiesterase",
+     "why": "A insulina **ativa** a fosfodiesterase (o AMPc cai). Inibi-la manteria a PKA ligada.",
+     "wouldBe": "a pergunta fosse sobre um fármaco que eleva o AMPc, como a teofilina."
+    },
+    {
+     "text": "Translocation of GLUT4 to the hepatocyte membrane",
+     "why": "O hepatócito usa GLUT2, que não depende de insulina; GLUT4 é de músculo e tecido adiposo.",
+     "wouldBe": "a pergunta fosse sobre a captação de glicose pelo músculo esquelético ou pelo adipócito."
+    }
+   ],
+   "tested": "Questions ask how insulin rapidly inactivates glycogen phosphorylase (activation of protein phosphatase 1 and of phosphodiesterase, lowering cAMP)."
+  },
+  {
+   "id": "q-u1-sw-4",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 3,
+   "rule": "interruptor",
+   "card": "u1-c02",
+   "stem": "A 41-year-old woman has episodic headaches, palpitations, and sweating. During an episode, her blood pressure is 210/120 mm Hg. Plasma free metanephrine concentrations are markedly increased. During episodes, her serum free fatty acid and glycerol concentrations also increase.",
+   "question": "Increased activity of which of the following enzymes in adipose tissue most directly explains the changes in free fatty acids and glycerol?",
+   "options": [
+    {
+     "text": "Acetyl-CoA carboxylase",
+     "why": "Síntese de ácidos graxos; fosforilada pela PKA (ou pela AMPK), fica inativa.",
+     "wouldBe": "a pergunta fosse sobre a enzima limitante da lipogênese, ativada pela insulina."
+    },
+    {
+     "text": "Glycerol kinase",
+     "why": "Fica no fígado (o adipócito praticamente não a tem) e aproveita o glicerol para a gliconeogênese; não libera glicerol.",
+     "wouldBe": "a pergunta fosse sobre o uso hepático do glicerol liberado pela lipólise."
+    },
+    {
+     "text": "Hormone-sensitive lipase",
+     "correct": true,
+     "why": "Catecolaminas (feocromocitoma) → receptores β no adipócito → AMPc → PKA → fosforila a lipase hormônio-sensível, que fica **ativa**: enzima que libera combustível = modo jejum/estresse. O triglicerídeo vira ácidos graxos + glicerol."
+    },
+    {
+     "text": "Lipoprotein lipase",
+     "why": "Fica no endotélio capilar e hidrolisa triglicerídeos de quilomícrons e VLDL para o tecido **captar** ácidos graxos; é estimulada pela insulina.",
+     "wouldBe": "a pergunta fosse sobre a captação de gordura após uma refeição gordurosa."
+    },
+    {
+     "text": "Pancreatic lipase",
+     "why": "Digere gordura na luz intestinal; não age no tecido adiposo.",
+     "wouldBe": "a pergunta fosse sobre esteatorreia por insuficiência pancreática."
+    }
+   ],
+   "tested": "A catecholamine-secreting tumor or a sympathomimetic drug and a question about the adipocyte enzyme activated by protein kinase A (hormone-sensitive lipase)."
+  },
+  {
+   "id": "q-u1-sw-5",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 4,
+   "rule": "interruptor",
+   "card": "u1-c03",
+   "stem": "A 68-year-old man with chronic obstructive pulmonary disease is brought to the emergency department because of nausea, tremor, and palpitations after taking extra doses of his oral bronchodilator, which inhibits the enzyme that degrades cyclic AMP. His pulse is 124/min. Serum potassium concentration is 3.0 mEq/L, and serum glucose concentration is 205 mg/dL.",
+   "question": "Which of the following sets of changes is most likely present in this patient's hepatocytes?",
+   "options": [
+    {
+     "text": "Decreased cAMP; glycogen phosphorylase active; glycogen synthase inactive",
+     "why": "Inibir a fosfodiesterase acumula AMPc; não o reduz.",
+     "wouldBe": "o fármaco ativasse a fosfodiesterase — e mesmo assim o padrão enzimático não combinaria."
+    },
+    {
+     "text": "Decreased cAMP; glycogen phosphorylase inactive; glycogen synthase active",
+     "why": "É o padrão do estado alimentado, sob insulina.",
+     "wouldBe": "o paciente tivesse recebido insulina."
+    },
+    {
+     "text": "Increased cAMP; glycogen phosphorylase active; glycogen synthase active",
+     "why": "A PKA fosforila as duas, e a sintase fosforilada fica inativa. Ativar as duas seria um ciclo fútil, que o fígado evita.",
+     "wouldBe": "nenhuma situação fisiológica: é justamente o que a regulação recíproca impede."
+    },
+    {
+     "text": "Increased cAMP; glycogen phosphorylase active; glycogen synthase inactive",
+     "correct": true,
+     "why": "A teofilina (metilxantina) inibe a fosfodiesterase → o AMPc acumula → PKA → fosforilase ativa e sintase inativa → glicogenólise → hiperglicemia. A hipocalemia vem do mesmo excesso de sinalização AMPc/β₂, que ativa a Na⁺/K⁺-ATPase e joga K⁺ para dentro das células."
+    },
+    {
+     "text": "Increased cAMP; glycogen phosphorylase inactive; glycogen synthase active",
+     "why": "Inverte o efeito da fosforilação sobre as duas enzimas.",
+     "wouldBe": "a pergunta descrevesse o efeito da insulina, que desfosforila."
+    }
+   ],
+   "tested": "Theophylline toxicity (phosphodiesterase inhibition) or a β-agonist overdose with hyperglycemia and hypokalemia, asking about cAMP-dependent changes in hepatic enzymes."
+  },
+  {
+   "id": "q-u1-sw-6",
+   "concepts": [
+    "fedfast.switch"
+   ],
+   "level": 2,
+   "rule": "interruptor",
+   "card": "u1-c01",
+   "stem": "In a physiology experiment, glucagon is infused into a healthy volunteer after an overnight fast. Biopsies of the liver and of the quadriceps muscle are obtained before and after the infusion. Hepatic glycogen content decreases, but muscle glycogen content does not change.",
+   "question": "Which of the following best explains why muscle glycogen is unaffected by the infusion?",
+   "options": [
+    {
+     "text": "Glucagon activates protein phosphatase 1 in skeletal muscle",
+     "why": "Quem ativa a proteína fosfatase 1 é a insulina; e o glucagon nem age no músculo.",
+     "wouldBe": "a pergunta fosse sobre o mecanismo rápido da insulina."
+    },
+    {
+     "text": "Skeletal muscle lacks glucagon receptors",
+     "correct": true,
+     "why": "Sem receptor, o glucagon não gera AMPc nem ativa a PKA no músculo. O músculo mobiliza seu glicogênio com a adrenalina (receptor β₂), com o Ca²⁺ da contração e com o AMP."
+    },
+    {
+     "text": "Skeletal muscle lacks glucose-6-phosphatase",
+     "why": "É verdade, mas explica por que o músculo não **exporta** glicose — não por que ele não **quebra** glicogênio.",
+     "wouldBe": "a pergunta fosse por que o glicogênio muscular não eleva a glicemia."
+    },
+    {
+     "text": "Skeletal muscle lacks glycogen phosphorylase",
+     "why": "O músculo tem fosforilase própria (miofosforilase); sem ela haveria doença de McArdle.",
+     "wouldBe": "o voluntário tivesse cãibras e mioglobinúria durante o esforço."
+    },
+    {
+     "text": "Skeletal muscle uses only fatty acids during fasting",
+     "why": "O músculo em repouso prefere ácidos graxos, mas isso não impediria o glucagon de agir se houvesse receptor; o problema é de sinalização.",
+     "wouldBe": "a pergunta fosse sobre o combustível preferido do músculo em repouso."
+    }
+   ],
+   "tested": "Questions ask why glucagon mobilizes hepatic but not skeletal muscle glycogen (skeletal muscle has no glucagon receptors)."
+  },
+  {
+   "id": "q-u1-gl-1",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 1,
+   "rule": "transportador",
+   "card": "u1-c04",
+   "stem": "A 22-year-old woman with newly diagnosed type 1 diabetes mellitus has not yet received insulin. Her serum glucose concentration is 480 mg/dL.",
+   "question": "Glucose uptake into which of the following cell types is most likely to be markedly reduced?",
+   "options": [
+    {
+     "text": "Adipocytes",
+     "correct": true,
+     "why": "Adipócito e músculo esquelético captam glicose pelo GLUT4, que só vai para a membrana com insulina. Sem insulina, a captação despenca mesmo com glicemia altíssima."
+    },
+    {
+     "text": "Erythrocytes",
+     "why": "Usam GLUT1, independente de insulina.",
+     "wouldBe": "a pergunta fosse sobre a célula que depende só de glicose por não ter mitocôndria."
+    },
+    {
+     "text": "Hepatocytes",
+     "why": "Usam GLUT2, independente de insulina (a insulina regula o metabolismo hepático, não o transporte).",
+     "wouldBe": "a pergunta fosse sobre o transportador bidirecional de Km alto."
+    },
+    {
+     "text": "Neurons",
+     "why": "Usam GLUT3, de alta afinidade e independente de insulina.",
+     "wouldBe": "a pergunta fosse sobre a captação que se mantém mesmo em hipoglicemia."
+    },
+    {
+     "text": "Pancreatic β cells",
+     "why": "Usam GLUT2 (sensor de glicose), independente de insulina.",
+     "wouldBe": "a pergunta fosse sobre o transportador que acopla a glicemia à secreção de insulina."
+    }
+   ],
+   "tested": "Questions ask which tissue's glucose uptake depends on insulin (skeletal muscle and adipose tissue, via GLUT4)."
+  },
+  {
+   "id": "q-u1-gl-2",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 2,
+   "rule": "transportador",
+   "card": "u1-c05",
+   "stem": "A glucose transporter is characterized in cells isolated from a 30-year-old man. It moves glucose in either direction across the plasma membrane, has a high Michaelis constant (Km) for glucose, and does not require insulin. Over the physiologic range, its transport rate rises nearly in proportion to the plasma glucose concentration.",
+   "question": "This transporter was most likely isolated from which of the following cells?",
+   "options": [
+    {
+     "text": "Adipocytes",
+     "why": "Usam GLUT4, que depende de insulina.",
+     "wouldBe": "o transportador fosse recrutado para a membrana pela insulina."
+    },
+    {
+     "text": "Erythrocytes",
+     "why": "GLUT1: Km baixo, quase saturado na glicemia normal, independente de insulina.",
+     "wouldBe": "o transportador fosse de alta afinidade e constante."
+    },
+    {
+     "text": "Hepatocytes",
+     "correct": true,
+     "why": "GLUT2: Km alto e bidirecional — capta glicose depois da refeição e exporta no jejum. Como o transporte acompanha a glicemia, funciona como sensor no fígado e na célula β."
+    },
+    {
+     "text": "Neurons",
+     "why": "GLUT3: Km muito baixo (alta afinidade), capta mesmo com glicemia baixa.",
+     "wouldBe": "o transportador garantisse captação mesmo em hipoglicemia."
+    },
+    {
+     "text": "Skeletal muscle fibers",
+     "why": "Usam GLUT4, dependente de insulina e do exercício.",
+     "wouldBe": "o transportador fosse levado à membrana durante a contração."
+    }
+   ],
+   "tested": "A transporter described by its kinetics (high Km, bidirectional, insulin-independent) and a question about its location (liver, pancreatic β cells)."
+  },
+  {
+   "id": "q-u1-gl-3",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 2,
+   "rule": "transportador",
+   "card": "u1-c04",
+   "stem": "A 17-year-old boy with type 1 diabetes mellitus injects his usual dose of insulin and then plays a 90-minute soccer match without eating extra carbohydrate. Two hours later, he becomes diaphoretic and confused, and his capillary glucose concentration is 48 mg/dL.",
+   "question": "Which of the following best explains the effect of exercise on his glucose concentration?",
+   "options": [
+    {
+     "text": "Contraction-induced translocation of GLUT4 to the muscle membrane",
+     "correct": true,
+     "why": "A contração ativa a AMPK, que leva GLUT4 à membrana **sem insulina**. Somada à insulina injetada, a captação muscular de glicose dispara → hipoglicemia."
+    },
+    {
+     "text": "Exercise-induced insulin secretion by pancreatic β cells",
+     "why": "No diabetes tipo 1 não há secreção relevante de insulina; além disso, o exercício **reduz** a secreção (adrenalina via α₂).",
+     "wouldBe": "o paciente tivesse diabetes tipo 2 em uso de secretagogo, como sulfonilureia."
+    },
+    {
+     "text": "Increased glucose uptake by erythrocytes through GLUT1",
+     "why": "A captação pela hemácia é basal e não muda com o exercício.",
+     "wouldBe": "a pergunta fosse sobre o transportador constitutivo da hemácia e da barreira hematoencefálica."
+    },
+    {
+     "text": "Increased glucose uptake by neurons through GLUT3",
+     "why": "A captação neuronal é praticamente constante; o cérebro é vítima da hipoglicemia, não a causa.",
+     "wouldBe": "a pergunta fosse sobre o tecido que mantém a captação mesmo com glicemia baixa."
+    },
+    {
+     "text": "Increased hepatic glucose release through GLUT2",
+     "why": "Isso elevaria a glicemia, não baixaria; no exercício o fígado tenta compensar.",
+     "wouldBe": "a pergunta fosse sobre como o fígado defende a glicemia durante o exercício."
+    }
+   ],
+   "tested": "A patient with diabetes becomes hypoglycemic after exercise without extra carbohydrate (insulin-independent GLUT4 translocation in contracting muscle)."
+  },
+  {
+   "id": "q-u1-gl-4",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 3,
+   "rule": "nao-absorvido",
+   "card": "u1-c05",
+   "stem": "A 4-month-old girl has had watery diarrhea since birth whenever she is fed breast milk or standard infant formula. The diarrhea stops when she is fasted and when she is given a formula in which fructose is the only carbohydrate. Stool pH is acidic, and stool tests for reducing substances are positive.",
+   "question": "A defect in which of the following transporters is the most likely cause?",
+   "options": [
+    {
+     "text": "GLUT1",
+     "why": "Fica na hemácia e na barreira hematoencefálica; não é o transportador apical do enterócito.",
+     "wouldBe": "a criança tivesse convulsões com glicose baixa no líquor e glicemia normal (deficiência de GLUT1)."
+    },
+    {
+     "text": "GLUT2",
+     "why": "Fica na face basolateral (saída do enterócito) para glicose, galactose **e frutose**; seu defeito prejudicaria a frutose também.",
+     "wouldBe": "o defeito afetasse a saída dos três monossacarídeos, com acúmulo de glicogênio no fígado e no rim (síndrome de Fanconi-Bickel)."
+    },
+    {
+     "text": "GLUT5",
+     "why": "Transporta frutose; seu defeito causaria intolerância justamente à fórmula de frutose.",
+     "wouldBe": "a diarreia ocorresse com frutose e não com glicose ou galactose."
+    },
+    {
+     "text": "Sodium-glucose cotransporter 1 (SGLT1)",
+     "correct": true,
+     "why": "Glicose e galactose entram no enterócito pelo SGLT1 ([[SGLT1]]), junto com Na⁺, na membrana apical. A frutose entra por outro transportador (GLUT5) — por isso a fórmula só com frutose é tolerada. O açúcar não absorvido fica na luz → diarreia osmótica, fermentação, fezes ácidas."
+    },
+    {
+     "text": "Sodium-glucose cotransporter 2 (SGLT2)",
+     "why": "Fica no túbulo proximal renal, reabsorvendo glicose; não está no intestino.",
+     "wouldBe": "a pergunta fosse sobre glicosúria com glicemia normal ou sobre os inibidores de SGLT2 (gliflozinas)."
+    }
+   ],
+   "tested": "An infant with osmotic diarrhea triggered by glucose and galactose but not by fructose (SGLT1 defect), or a question about which apical transporter absorbs fructose (GLUT5)."
+  },
+  {
+   "id": "q-u1-gl-5",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 4,
+   "rule": "transportador",
+   "card": "u1-c04",
+   "stem": "A 14-month-old boy has had recurrent seizures since 4 months of age, with acquired microcephaly and developmental delay. Seizures are more frequent before meals. Serum glucose concentration is 86 mg/dL. Cerebrospinal fluid analysis, obtained at the same time, shows a glucose concentration of 28 mg/dL, with normal cell count and protein and a low-normal lactate concentration.",
+   "question": "Which of the following dietary interventions is most likely to reduce this patient's seizures?",
+   "options": [
+    {
+     "text": "Elimination of fructose and sucrose",
+     "why": "Trata a intolerância hereditária à frutose (aldolase B), que causa hipoglicemia e lesão hepática após frutas — não glicose baixa só no líquor.",
+     "wouldBe": "os sintomas começassem com a introdução de frutas, sucos ou mel."
+    },
+    {
+     "text": "Elimination of lactose and galactose",
+     "why": "Trata a galactosemia (GALT): icterícia, hepatomegalia, catarata e sepse por _E. coli_ após o leite.",
+     "wouldBe": "o quadro começasse com a amamentação, com catarata e insuficiência hepática."
+    },
+    {
+     "text": "Frequent feedings of uncooked cornstarch",
+     "why": "Mantém a glicemia no jejum — útil quando falta glicose **no sangue** (von Gierke). Aqui a glicemia é normal; o gargalo é a passagem para o cérebro.",
+     "wouldBe": "a criança tivesse hipoglicemia de jejum com hepatomegalia (glicogenose tipo I)."
+    },
+    {
+     "text": "High-carbohydrate diet with added glucose",
+     "why": "A glicemia já é normal; com o transportador da barreira defeituoso, mais glicose no sangue muda pouco a glicose do líquor.",
+     "wouldBe": "a glicose baixa no líquor fosse consequência de hipoglicemia sistêmica."
+    },
+    {
+     "text": "High-fat, very-low-carbohydrate (ketogenic) diet",
+     "correct": true,
+     "why": "Glicose normal no sangue e baixa no líquor, sem infecção e com lactato baixo-normal → falha no transporte de glicose pela barreira hematoencefálica (deficiência de GLUT1). Corpos cetônicos entram no cérebro por outro transportador (de monocarboxilatos) e dão ao neurônio um combustível que **contorna** o bloqueio."
+    }
+   ],
+   "tested": "A child with seizures and low CSF glucose despite normal blood glucose (GLUT1 deficiency); the question asks for the defective transporter or for the benefit of a ketogenic diet.",
+   "verify": "A deficiência de GLUT1 é menos clássica no Step 1; foi incluída como integração neurológica do conceito de transportadores."
+  },
+  {
+   "id": "q-u1-gl-6",
+   "concepts": [
+    "fedfast.glut"
+   ],
+   "level": 4,
+   "rule": "transportador",
+   "card": "u1-c04",
+   "stem": "A 58-year-old man with obesity and type 2 diabetes mellitus has a hemoglobin A1c of 8.4% despite metformin therapy. A drug is added that binds a nuclear receptor in adipocytes and increases transcription of genes that enhance insulin sensitivity. Three months later, his postprandial peripheral glucose uptake has increased, and he has gained 3 kg (6.6 lb) and has mild ankle edema.",
+   "question": "Increased expression of which of the following proteins best explains the improvement in his postprandial glucose uptake?",
+   "options": [
+    {
+     "text": "GLUT2",
+     "why": "É do fígado e da célula β; não depende de insulina e não explica a captação periférica.",
+     "wouldBe": "a pergunta fosse sobre o transportador do sensor de glicose da célula β."
+    },
+    {
+     "text": "GLUT3",
+     "why": "É neuronal; a captação cerebral não depende de insulina.",
+     "wouldBe": "a pergunta fosse sobre o tecido que mantém a captação em hipoglicemia."
+    },
+    {
+     "text": "GLUT4",
+     "correct": true,
+     "why": "Tiazolidinedionas (pioglitazona) ativam o PPAR-γ, um receptor nuclear → aumentam a expressão de GLUT4 e de adiponectina e a sensibilidade à insulina no tecido adiposo e no músculo. Retenção de líquido, edema e ganho de peso são efeitos adversos típicos."
+    },
+    {
+     "text": "GLUT5",
+     "why": "Absorve frutose no intestino.",
+     "wouldBe": "a pergunta fosse sobre a absorção de frutose."
+    },
+    {
+     "text": "Sodium-glucose cotransporter 2 (SGLT2)",
+     "why": "Reabsorve glicose no rim; o fármaco que age aí o **inibe** (gliflozina) e causa glicosúria — não é o mecanismo do caso.",
+     "wouldBe": "o fármaco causasse glicosúria, perda de peso e infecções genitais."
+    }
+   ],
+   "tested": "Thiazolidinedione therapy (PPAR-γ agonist) with weight gain and edema; the question asks which gene product increases insulin-stimulated glucose uptake (GLUT4)."
+  },
+  {
+   "id": "q-u1-fu-1",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 1,
+   "rule": "combustivel",
+   "card": "u1-c07",
+   "stem": "A healthy 25-year-old man fasts for 5 days, drinking only water, as part of a supervised metabolic study.",
+   "question": "On the fifth day, which of the following is the major fuel used by his brain in addition to glucose?",
+   "options": [
+    {
+     "text": "Alanine",
+     "why": "Leva carbono e nitrogênio do músculo ao fígado para a gliconeogênese; não é combustível direto do cérebro.",
+     "wouldBe": "a pergunta fosse sobre o principal aminoácido gliconeogênico liberado pelo músculo."
+    },
+    {
+     "text": "β-Hydroxybutyrate",
+     "correct": true,
+     "why": "Na inanição, o fígado converte o acetil-CoA da β-oxidação em corpos cetônicos (acetoacetato e β-hidroxibutirato), que atravessam a barreira hematoencefálica e suprem boa parte da energia do cérebro, poupando glicose — e, com isso, proteína muscular."
+    },
+    {
+     "text": "Free fatty acids",
+     "why": "Não são combustível relevante para o cérebro (atravessam mal a barreira e são pouco oxidados pelo neurônio).",
+     "wouldBe": "a pergunta fosse sobre o combustível do músculo em repouso ou do coração."
+    },
+    {
+     "text": "Glycerol",
+     "why": "É substrato hepático para gliconeogênese, não combustível direto do cérebro.",
+     "wouldBe": "a pergunta fosse sobre o substrato gliconeogênico que vem da lipólise."
+    },
+    {
+     "text": "Lactate",
+     "why": "Vem da hemácia e do músculo e vai ao fígado para virar glicose (ciclo de Cori).",
+     "wouldBe": "a pergunta fosse sobre o substrato do ciclo de Cori."
+    }
+   ],
+   "tested": "Prolonged fasting or starvation and a question about the brain's main alternative fuel (ketone bodies)."
+  },
+  {
+   "id": "q-u1-fu-2",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 2,
+   "rule": "combustivel",
+   "card": "u1-c07",
+   "stem": "A 30-year-old woman fasts for 3 days for religious reasons. Her serum β-hydroxybutyrate and free fatty acid concentrations are increased, and her serum glucose concentration is 62 mg/dL.",
+   "question": "Which of the following cell types continues to depend entirely on glucose for energy in this patient?",
+   "options": [
+    {
+     "text": "Cardiac myocytes",
+     "why": "O coração usa preferencialmente ácidos graxos e também corpos cetônicos.",
+     "wouldBe": "a pergunta fosse sobre o tecido que mais consome ácidos graxos."
+    },
+    {
+     "text": "Cortical neurons",
+     "why": "Na inanição passam a usar corpos cetônicos em boa parte.",
+     "wouldBe": "a pergunta fosse sobre o tecido que se adapta a cetonas após vários dias de jejum."
+    },
+    {
+     "text": "Erythrocytes",
+     "correct": true,
+     "why": "Sem mitocôndria, a hemácia não oxida ácidos graxos nem corpos cetônicos: depende só da glicólise anaeróbia, em qualquer estado nutricional."
+    },
+    {
+     "text": "Hepatocytes",
+     "why": "No jejum, o fígado queima ácidos graxos (β-oxidação) para gerar energia e corpos cetônicos.",
+     "wouldBe": "a pergunta fosse sobre o órgão que produz, mas não usa, corpos cetônicos."
+    },
+    {
+     "text": "Skeletal muscle fibers",
+     "why": "Usam ácidos graxos e corpos cetônicos no jejum.",
+     "wouldBe": "a pergunta fosse sobre o tecido que libera alanina para a gliconeogênese."
+    }
+   ],
+   "tested": "A question asks which cell type relies exclusively on glucose during fasting or starvation (red blood cells, which lack mitochondria)."
+  },
+  {
+   "id": "q-u1-fu-3",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 2,
+   "rule": "combustivel",
+   "card": "u1-c07",
+   "stem": "During a 48-hour fast, the hepatocytes of a 28-year-old man produce large amounts of acetoacetate and β-hydroxybutyrate from fatty acid oxidation. These ketone bodies are released into the blood and oxidized by the brain, heart, and skeletal muscle, but not by the liver itself.",
+   "question": "Hepatocytes cannot use ketone bodies as fuel because they lack which of the following enzymes?",
+   "options": [
+    {
+     "text": "Carnitine palmitoyltransferase I",
+     "why": "Leva ácidos graxos para a mitocôndria; o fígado tem e usa muito no jejum.",
+     "wouldBe": "a pergunta fosse sobre o defeito que impede a β-oxidação no jejum (hipoglicemia hipocetótica)."
+    },
+    {
+     "text": "β-Hydroxybutyrate dehydrogenase",
+     "why": "Interconverte acetoacetato e β-hidroxibutirato; está presente no fígado.",
+     "wouldBe": "a pergunta fosse sobre por que o β-hidroxibutirato predomina quando há muito NADH (cetoacidose alcoólica)."
+    },
+    {
+     "text": "HMG-CoA lyase",
+     "why": "Libera acetoacetato do HMG-CoA durante a **síntese**; está presente no fígado.",
+     "wouldBe": "a pergunta fosse sobre hipoglicemia hipocetótica por defeito na produção de cetonas."
+    },
+    {
+     "text": "HMG-CoA synthase (mitochondrial)",
+     "why": "É a enzima limitante da **síntese** de corpos cetônicos — o fígado tem bastante.",
+     "wouldBe": "a pergunta fosse sobre a enzima limitante da cetogênese."
+    },
+    {
+     "text": "Succinyl-CoA:3-ketoacid CoA transferase",
+     "correct": true,
+     "why": "Para virar combustível, o acetoacetato precisa ser ativado a acetoacetil-CoA pela tioforase ([[thiophorase]]), que recebe a CoA da succinil-CoA. O fígado não tem essa enzima: fabrica corpos cetônicos para os outros tecidos, sem consumi-los."
+    }
+   ],
+   "tested": "A question asks why the liver exports but cannot oxidize ketone bodies (lack of succinyl-CoA:3-ketoacid CoA transferase)."
+  },
+  {
+   "id": "q-u1-fu-4",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 3,
+   "rule": "combustivel",
+   "card": "u1-c06",
+   "stem": "A 19-year-old woman with anorexia nervosa has eaten almost nothing for the past 10 days. She has marked loss of muscle mass. Her serum glucose concentration is 64 mg/dL, and her serum β-hydroxybutyrate concentration is markedly increased. Her hepatic glycogen stores are depleted.",
+   "question": "Which of the following is the major source of carbon for the glucose that her liver is still producing?",
+   "options": [
+    {
+     "text": "Amino acids from muscle protein",
+     "correct": true,
+     "why": "Sem glicogênio hepático, a glicose vem da gliconeogênese, e o principal substrato na inanição são aminoácidos do músculo (sobretudo alanina e glutamina), além do glicerol da lipólise. As cetonas altas reduzem a necessidade de glicose, mas a perda muscular continua."
+    },
+    {
+     "text": "Even-chain fatty acids from adipose tissue",
+     "why": "Viram acetil-CoA, que não pode virar glicose (a PDH é irreversível e o acetil-CoA sai como CO₂ no ciclo de Krebs). Fornecem energia e corpos cetônicos, não carbono para glicose.",
+     "wouldBe": "a pergunta fosse sobre o combustível que dá origem aos corpos cetônicos."
+    },
+    {
+     "text": "Hepatic glycogen",
+     "why": "Esgota-se por volta de 1 dia de jejum; o enunciado diz que acabou.",
+     "wouldBe": "a paciente estivesse em jejum de poucas horas."
+    },
+    {
+     "text": "Ketone bodies",
+     "why": "São combustível (cérebro, coração, músculo), não substrato para fazer glicose.",
+     "wouldBe": "a pergunta fosse sobre o principal combustível alternativo do cérebro na inanição."
+    },
+    {
+     "text": "Muscle glycogen",
+     "why": "O músculo não tem glicose-6-fosfatase; seu glicogênio não vira glicose do sangue.",
+     "wouldBe": "a pergunta fosse sobre a reserva usada pelo próprio músculo durante o exercício."
+    }
+   ],
+   "tested": "Starvation (anorexia nervosa, prolonged fasting) and a question about the main substrate for gluconeogenesis or the cause of muscle wasting."
+  },
+  {
+   "id": "q-u1-fu-5",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 2,
+   "rule": "combustivel",
+   "card": "u1-c06",
+   "stem": "A 35-year-old woman is admitted for elective surgery that is repeatedly postponed. For 40 hours she receives only water and electrolytes, without dextrose. Her serum glucose concentration is 72 mg/dL.",
+   "question": "Which of the following processes is currently the major source of her circulating glucose?",
+   "options": [
+    {
+     "text": "Conversion of even-chain fatty acids to glucose",
+     "why": "Não existe conversão líquida: o acetil-CoA não volta a piruvato.",
+     "wouldBe": "a pergunta fosse sobre a origem dos corpos cetônicos (essa sim vem dos ácidos graxos)."
+    },
+    {
+     "text": "Hepatic gluconeogenesis",
+     "correct": true,
+     "why": "Após ~40 h, o glicogênio hepático (que dura cerca de 1 dia) já não sustenta a glicemia; a gliconeogênese, a partir de aminoácidos, lactato e glicerol, passou a ser a principal fonte."
+    },
+    {
+     "text": "Hepatic glycogenolysis",
+     "why": "O glicogênio hepático dura cerca de 1 dia; após 40 h contribui pouco.",
+     "wouldBe": "a coleta fosse após poucas horas de jejum."
+    },
+    {
+     "text": "Intestinal absorption of glucose",
+     "why": "Não há ingestão há 40 h.",
+     "wouldBe": "a coleta fosse logo após uma refeição."
+    },
+    {
+     "text": "Muscle glycogenolysis",
+     "why": "Sem glicose-6-fosfatase, o músculo não exporta glicose.",
+     "wouldBe": "a pergunta fosse sobre o combustível do próprio músculo num exercício intenso."
+    }
+   ],
+   "tested": "The duration of fasting is given and the question asks which process maintains blood glucose (glycogenolysis early; gluconeogenesis after about a day)."
+  },
+  {
+   "id": "q-u1-fu-6",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 3,
+   "rule": "combustivel",
+   "card": "u1-c07",
+   "stem": "A 40-year-old man is rescued from a house fire. He is confused and has a severe lactic acidosis. Toxicology studies confirm cyanide poisoning; cyanide inhibits cytochrome c oxidase in the mitochondrial electron transport chain.",
+   "question": "ATP production in which of the following cells is least affected by the toxin?",
+   "options": [
+    {
+     "text": "Cardiac myocytes",
+     "why": "Dependem muito da fosforilação oxidativa (ácidos graxos); são muito afetados.",
+     "wouldBe": "a pergunta fosse sobre o tecido com maior densidade de mitocôndrias."
+    },
+    {
+     "text": "Cortical neurons",
+     "why": "Dependem da oxidação aeróbia da glicose; daí a confusão e as convulsões no envenenamento.",
+     "wouldBe": "a pergunta fosse sobre o tecido que mostra sintomas primeiro."
+    },
+    {
+     "text": "Erythrocytes",
+     "correct": true,
+     "why": "A hemácia não tem mitocôndria: produz todo o seu ATP por glicólise anaeróbia (glicose → lactato). Bloquear a cadeia respiratória não muda sua fonte de energia."
+    },
+    {
+     "text": "Hepatocytes",
+     "why": "Usam muita fosforilação oxidativa; além disso, o fígado deixa de remover lactato.",
+     "wouldBe": "a pergunta fosse sobre por que o lactato não é reciclado (ciclo de Cori comprometido)."
+    },
+    {
+     "text": "Proximal tubule cells",
+     "why": "Gastam muito ATP aeróbio no transporte de Na⁺; são muito sensíveis à falta de O₂.",
+     "wouldBe": "a pergunta fosse sobre necrose tubular aguda por isquemia."
+    }
+   ],
+   "tested": "A mitochondrial poison (cyanide, carbon monoxide) and a question about which cell's ATP generation is unaffected (red blood cells, which rely on glycolysis)."
+  },
+  {
+   "id": "q-u1-fu-7",
+   "concepts": [
+    "fedfast.fuel"
+   ],
+   "level": 4,
+   "rule": "combustivel",
+   "card": "u1-c06",
+   "stem": "A 45-year-old man with obesity undergoes a medically supervised fast consisting of water, vitamins, and electrolytes only. His 24-hour urinary nitrogen excretion is high during the first days of the fast and then decreases progressively over the next 3 weeks, while his serum β-hydroxybutyrate concentration rises to a plateau.",
+   "question": "Which of the following best explains the decrease in urinary nitrogen excretion?",
+   "options": [
+    {
+     "text": "Brain oxidation of fatty acids replaces glucose as its main fuel",
+     "why": "O cérebro praticamente não usa ácidos graxos.",
+     "wouldBe": "a pergunta fosse sobre o coração ou o músculo em repouso."
+    },
+    {
+     "text": "Brain oxidation of ketone bodies reduces the need for gluconeogenesis from amino acids",
+     "correct": true,
+     "why": "Nitrogênio urinário reflete quebra de proteína (aminoácidos → glicose; o nitrogênio vira ureia). Nos primeiros dias, o cérebro ainda exige muita glicose, feita a partir de aminoácidos musculares. Com semanas, ele passa a obter boa parte da energia dos corpos cetônicos → menos gliconeogênese a partir de proteína → menos ureia. É a adaptação que poupa músculo."
+    },
+    {
+     "text": "Depletion of hepatic glycogen stops protein breakdown",
+     "why": "O esgotamento do glicogênio **aumenta** a dependência de gliconeogênese a partir de proteína nos primeiros dias.",
+     "wouldBe": "a pergunta fosse sobre o que muda por volta do 1º dia de jejum."
+    },
+    {
+     "text": "Increased insulin secretion inhibits proteolysis",
+     "why": "A insulina cai no jejum; não é ela que poupa a proteína aqui.",
+     "wouldBe": "a pergunta fosse sobre o estado alimentado, em que a insulina inibe a proteólise."
+    },
+    {
+     "text": "Skeletal muscle converts fatty acids into glucose for export",
+     "why": "Não há conversão de ácido graxo de cadeia par em glicose, e o músculo nem exporta glicose.",
+     "wouldBe": "a pergunta fosse sobre o glicerol, a parte do triglicerídeo que vira glicose no fígado."
+    }
+   ],
+   "tested": "Urinary nitrogen excretion during prolonged starvation and a question about the adaptation that spares muscle protein (brain use of ketone bodies)."
+  },
+  {
+   "id": "q-u1-out-1",
+   "concepts": [
+    "fedfast.output"
+   ],
+   "level": 1,
+   "rule": "saida-hepatica",
+   "card": "u1-c08",
+   "stem": "A 27-year-old man is studied after an overnight fast. The glucose his liver releases into the blood comes from glucose-6-phosphate generated by both glycogenolysis and gluconeogenesis.",
+   "question": "The final reaction that releases free glucose from his hepatocytes takes place in which of the following locations?",
+   "options": [
+    {
+     "text": "Cytosol",
+     "why": "Ali ficam a glicólise, a glicogenólise e boa parte da gliconeogênese — mas não a última etapa.",
+     "wouldBe": "a pergunta fosse sobre a glicogênio fosforilase ou a frutose-1,6-bisfosfatase."
+    },
+    {
+     "text": "Endoplasmic reticulum",
+     "correct": true,
+     "why": "A glicose-6-fosfatase fica na membrana do retículo endoplasmático, voltada para a luz: a glicose-6-P entra no RE por uma translocase, perde o fosfato e a glicose livre sai da célula pelo GLUT2."
+    },
+    {
+     "text": "Golgi apparatus",
+     "why": "Não participa do destino da glicose-6-P.",
+     "wouldBe": "a pergunta fosse sobre o processamento de glicoproteínas."
+    },
+    {
+     "text": "Lysosome",
+     "why": "Degrada uma pequena fração do glicogênio pela maltase ácida (que falta na doença de Pompe), sem papel na glicemia.",
+     "wouldBe": "a pergunta fosse sobre a enzima deficiente na doença de Pompe."
+    },
+    {
+     "text": "Mitochondrial matrix",
+     "why": "Ali ocorre a piruvato carboxilase (início da gliconeogênese), não a liberação de glicose.",
+     "wouldBe": "a pergunta fosse sobre a etapa da gliconeogênese que depende de biotina."
+    }
+   ],
+   "tested": "Questions ask about the subcellular location of glucose-6-phosphatase (endoplasmic reticulum) or about the transporter defect of glycogen storage disease type Ib."
+  },
+  {
+   "id": "q-u1-out-2",
+   "concepts": [
+    "fedfast.output"
+   ],
+   "level": 2,
+   "rule": "saida-hepatica",
+   "card": "u1-c08",
+   "stem": "Researchers compare the ability of different organs to release free glucose into the circulation during a prolonged fast.",
+   "question": "Besides the liver, which of the following organs can release glucose into the blood because it expresses glucose-6-phosphatase?",
+   "options": [
+    {
+     "text": "Adipose tissue",
+     "why": "Libera ácidos graxos e glicerol, não glicose.",
+     "wouldBe": "a pergunta fosse sobre a origem do glicerol usado na gliconeogênese."
+    },
+    {
+     "text": "Brain",
+     "why": "Consome glicose; não a exporta.",
+     "wouldBe": "a pergunta fosse sobre o maior consumidor de glicose em repouso."
+    },
+    {
+     "text": "Heart",
+     "why": "Consome principalmente ácidos graxos; não exporta glicose.",
+     "wouldBe": "a pergunta fosse sobre o órgão que prefere ácidos graxos."
+    },
+    {
+     "text": "Kidney",
+     "correct": true,
+     "why": "O córtex renal faz gliconeogênese e tem glicose-6-fosfatase; sua contribuição para a glicemia cresce no jejum prolongado."
+    },
+    {
+     "text": "Skeletal muscle",
+     "why": "Tem grande reserva de glicogênio, mas não tem glicose-6-fosfatase — guarda a glicose para si.",
+     "wouldBe": "a pergunta fosse sobre o maior estoque de glicogênio do corpo."
+    }
+   ],
+   "tested": "A question asks which organs express glucose-6-phosphatase and can add glucose to the blood (liver and kidney), often contrasted with skeletal muscle."
+  },
+  {
+   "id": "q-u1-out-3",
+   "concepts": [
+    "fedfast.output",
+    "gsd.vongierke"
+   ],
+   "level": 2,
+   "rule": "bloqueio",
+   "card": "u1-c09",
+   "stem": "A 6-month-old girl has episodes of irritability and sweating 3 to 4 hours after feedings. She has a protuberant abdomen, and the liver edge is palpable 6 cm below the right costal margin. During an episode, her serum glucose concentration is 32 mg/dL. Enzyme studies show deficient activity of the enzyme that releases free glucose from glucose-6-phosphate.",
+   "question": "Which of the following serum findings is most likely during an episode?",
+   "options": [
+    {
+     "text": "Decreased lactate",
+     "why": "O lactato **sobe**: a glicose-6-P transborda pela glicólise e o fígado não consegue converter lactato em glicose livre.",
+     "wouldBe": "a pergunta fosse sobre o teste de exercício isquêmico na doença de McArdle (o lactato não sobe)."
+    },
+    {
+     "text": "Decreased triglycerides",
+     "why": "Os triglicerídeos **sobem**: a glicose-6-P desvia para a lipogênese, e a mobilização de gordura no jejum leva mais ácidos graxos ao fígado, que exporta VLDL.",
+     "wouldBe": "a pergunta fosse sobre um defeito na produção de lipoproteínas (abetalipoproteinemia)."
+    },
+    {
+     "text": "Decreased uric acid",
+     "why": "O ácido úrico **sobe**: mais glicose-6-P na via das pentoses → mais purinas; e o lactato compete com o urato na excreção renal.",
+     "wouldBe": "o paciente usasse alopurinol ou um uricosúrico."
+    },
+    {
+     "text": "Increased lactate",
+     "correct": true,
+     "why": "Bloqueio na glicose-6-fosfatase (von Gierke): a glicose-6-P acumula e desvia para glicólise → piruvato → **lactato**; além disso, o lactato que chega ao fígado não consegue virar glicose livre. A mesma lógica explica ↑ácido úrico (via das pentoses) e ↑triglicerídeos (lipogênese)."
+    },
+    {
+     "text": "Normal lactate with increased ketone bodies",
+     "why": "Esse é o padrão da doença de Cori (enzima desramificadora): a gliconeogênese está intacta, então o lactato é consumido.",
+     "wouldBe": "a deficiência fosse da enzima desramificadora (glicogenose tipo III)."
+    }
+   ],
+   "tested": "An infant with fasting hypoglycemia and hepatomegaly; the question asks which laboratory abnormality is expected (lactic acidosis, hyperuricemia, hypertriglyceridemia) and why."
+  },
+  {
+   "id": "q-u1-out-4",
+   "concepts": [
+    "fedfast.output",
+    "gsd.vongierke"
+   ],
+   "level": 3,
+   "rule": "bloqueio",
+   "card": "u1-c09",
+   "stem": "A 4-year-old boy is evaluated for short stature and a protuberant abdomen. He has had several episodes of lethargy when meals were delayed. He has a round, doll-like face, hepatomegaly, and enlarged kidneys. Fasting serum studies show glucose 38 mg/dL, lactate 6.5 mmol/L, triglycerides 610 mg/dL, and uric acid 10.2 mg/dL. Intramuscular glucagon increases his serum lactate but not his serum glucose.",
+   "question": "Increased flux through which of the following pathways most directly contributes to his increased production of uric acid?",
+   "options": [
+    {
+     "text": "β-Oxidation of fatty acids",
+     "why": "Gera acetil-CoA e corpos cetônicos; não forma purinas.",
+     "wouldBe": "a pergunta fosse sobre a origem dos corpos cetônicos no jejum."
+    },
+    {
+     "text": "Gluconeogenesis",
+     "why": "Está bloqueada na última etapa; o fluxo desvia para fora dela.",
+     "wouldBe": "a pergunta fosse sobre a via que termina na glicose-6-fosfatase."
+    },
+    {
+     "text": "Heme synthesis",
+     "why": "Usa succinil-CoA e glicina; não tem relação com o excesso de glicose-6-P.",
+     "wouldBe": "a pergunta fosse sobre as porfirias."
+    },
+    {
+     "text": "Pentose phosphate pathway",
+     "correct": true,
+     "why": "Diagnóstico: von Gierke (o glucagon quebra glicogênio, mas a glicose-6-P não sai e vira lactato). A glicose-6-P acumulada desvia para a via das pentoses → ribose-5-P → PRPP → mais síntese e mais degradação de purinas → ácido úrico. Também contribuem o lactato competindo com o urato na excreção renal e a degradação aumentada de AMP."
+    },
+    {
+     "text": "Urea cycle",
+     "why": "Transforma amônia em ureia; não produz ácido úrico.",
+     "wouldBe": "a pergunta fosse sobre o destino do nitrogênio dos aminoácidos."
+    }
+   ],
+   "tested": "Glycogen storage disease type I with gout or hyperuricemia; the question asks for the mechanism (shunting of glucose-6-phosphate into the pentose phosphate pathway and purine synthesis)."
+  },
+  {
+   "id": "q-u1-out-5",
+   "concepts": [
+    "fedfast.output"
+   ],
+   "level": 3,
+   "rule": "bloqueio",
+   "card": "u1-c08",
+   "stem": "A 3-year-old girl has had two episodes of lethargy and vomiting, each after she refused food for most of a day during a febrile illness. During the latest episode, after an 18-hour fast, her serum glucose concentration was 35 mg/dL and lactate 7.0 mmol/L, and urine ketones were positive. The liver is not enlarged. Glucagon given during the episode did not raise her serum glucose, but glucagon given 2 hours after a meal on another day produced a normal rise.",
+   "question": "A defect in which of the following processes best explains these findings?",
+   "options": [
+    {
+     "text": "Fatty acid β-oxidation",
+     "why": "Defeitos de β-oxidação dão hipoglicemia de jejum prolongado, mas com cetonas **baixas** (hipocetótica).",
+     "wouldBe": "as cetonas estivessem ausentes durante a hipoglicemia (por exemplo, deficiência de MCAD)."
+    },
+    {
+     "text": "Gluconeogenesis",
+     "correct": true,
+     "why": "Logo após a refeição há glicogênio e o glucagon funciona → a glicogenólise está intacta. Depois de um dia sem comer, o glicogênio acabou e a glicemia depende da gliconeogênese — que está bloqueada: hipoglicemia + acúmulo do substrato (lactato). Cetonas positivas mostram que a β-oxidação funciona. Exemplo: deficiência de frutose-1,6-bisfosfatase."
+    },
+    {
+     "text": "Glycogen synthesis",
+     "why": "Sem síntese não haveria reserva: hipoglicemia já em jejuns curtos, e o glucagon pós-refeição também falharia.",
+     "wouldBe": "a criança tivesse hipoglicemia em jejum curto com hiperglicemia e lactato alto logo após comer (deficiência de glicogênio sintase)."
+    },
+    {
+     "text": "Glycogenolysis",
+     "why": "O glucagon pós-refeição funcionou → a quebra de glicogênio está normal.",
+     "wouldBe": "o glucagon falhasse mesmo logo após a refeição, com hepatomegalia."
+    },
+    {
+     "text": "Ketone body synthesis",
+     "why": "Há cetonas na urina; a síntese funciona.",
+     "wouldBe": "a hipoglicemia viesse com cetonas inapropriadamente baixas e β-oxidação normal (defeitos de HMG-CoA sintase ou liase)."
+    }
+   ],
+   "tested": "Hypoglycemia only after prolonged fasting, with lactic acidosis and a normal glucagon response after meals (a gluconeogenic defect such as fructose-1,6-bisphosphatase deficiency)."
+  },
+  {
+   "id": "q-u1-out-6",
+   "concepts": [
+    "fedfast.output",
+    "int.trigger"
+   ],
+   "level": 4,
+   "rule": "glucagon-teste",
+   "card": "u1-c08",
+   "stem": "A 52-year-old man is found confused on the street after a 3-day alcohol binge during which he ate almost nothing. His fingerstick glucose concentration is 34 mg/dL. Paramedics inject intramuscular glucagon, but 15 minutes later his glucose concentration is 36 mg/dL. Intravenous thiamine followed by dextrose is then given, and he improves.",
+   "question": "Which of the following best explains the failure of glucagon to raise his glucose concentration?",
+   "options": [
+    {
+     "text": "Absence of glucagon receptors on hepatocytes",
+     "why": "O fígado tem receptor de glucagon; quem não tem é o músculo esquelético.",
+     "wouldBe": "a pergunta fosse sobre por que o glicogênio muscular não responde ao glucagon."
+    },
+    {
+     "text": "Deficiency of hepatic glucose-6-phosphatase",
+     "why": "Seria um defeito congênito (von Gierke), com hepatomegalia e hipoglicemia desde a infância.",
+     "wouldBe": "o paciente fosse uma criança com hipoglicemia poucas horas após comer, hepatomegalia e lactato alto."
+    },
+    {
+     "text": "Depletion of hepatic glycogen",
+     "correct": true,
+     "why": "Em minutos, o glucagon eleva a glicemia quase só pela glicogenólise. Após dias sem comer, o glicogênio hepático acabou; a outra fonte, a gliconeogênese, está inibida pelo excesso de NADH do metabolismo do etanol. Por isso o glucagon falha e é preciso dar glicose — com tiamina antes."
+    },
+    {
+     "text": "Inhibition of hepatic glycogen phosphorylase by ethanol",
+     "why": "O etanol prejudica a gliconeogênese (NADH alto), não a fosforilase; e, aqui, não há mais glicogênio para quebrar.",
+     "wouldBe": "houvesse um defeito da fosforilase hepática (glicogenose tipo VI), com hepatomegalia e glicogênio acumulado."
+    },
+    {
+     "text": "Thiamine deficiency blocking glucagon signaling",
+     "why": "A tiamina é cofator da PDH, da α-cetoglutarato desidrogenase, da BCKDH e da transcetolase; não participa da sinalização do glucagon. É dada antes da glicose para não precipitar Wernicke.",
+     "wouldBe": "a pergunta fosse por que se dá tiamina antes da glicose."
+    }
+   ],
+   "tested": "An alcoholic or malnourished patient with hypoglycemia that does not respond to glucagon (no hepatic glycogen; gluconeogenesis inhibited by NADH)."
+  },
+  {
+   "id": "q-u2-pfk-p1",
+   "concepts": [
+    "gly.pfk"
+   ],
+   "level": 2,
+   "rule": "limitante",
+   "stem": "A 30-year-old man eats a large carbohydrate-rich meal. One hour later, his plasma insulin concentration is increased and his plasma glucagon concentration is decreased. In his liver, glycolysis increases while gluconeogenesis decreases.",
+   "question": "An increase in which of the following hepatic metabolites most directly mediates the reciprocal change in these two pathways?",
+   "options": [
+    {
+     "text": "Acetyl-CoA",
+     "why": "Ativa a piruvato carboxilase e inibe a PDH — favorece a gliconeogênese, o oposto do estado alimentado.",
+     "wouldBe": "a pergunta fosse sobre o sinal de jejum (β-oxidação ativa) que manda o piruvato para a gliconeogênese."
+    },
+    {
+     "text": "ATP",
+     "why": "Inibe a PFK-1: é sinal de energia alta.",
+     "wouldBe": "a pergunta fosse sobre o inibidor alostérico da PFK-1 que indica carga energética alta."
+    },
+    {
+     "text": "Citrate",
+     "why": "Sinal de abundância que **inibe** a PFK-1 (e ativa a frutose-1,6-bisfosfatase e a acetil-CoA carboxilase).",
+     "wouldBe": "a pergunta fosse sobre o sinal que freia a glicólise quando o ciclo de Krebs está cheio."
+    },
+    {
+     "text": "Fructose-2,6-bisphosphate",
+     "correct": true,
+     "why": "A insulina desfosforila a enzima bifuncional → o domínio PFK-2 fica ativo → ↑frutose-2,6-bisfosfato. Ela **ativa a PFK-1** (glicólise) e **inibe a frutose-1,6-bisfosfatase** (gliconeogênese) ao mesmo tempo."
+    },
+    {
+     "text": "Glucose-6-phosphate",
+     "why": "Ativa a glicogênio sintase e inibe a hexoquinase; não coordena PFK-1 × frutose-1,6-bisfosfatase.",
+     "wouldBe": "a pergunta fosse sobre o ativador alostérico da glicogênio sintase."
+    }
+   ],
+   "tested": "Fed versus fasting states and a question about the allosteric regulator that coordinates glycolysis and gluconeogenesis (fructose-2,6-bisphosphate)."
+  },
+  {
+   "id": "q-u3-thi-p1",
+   "concepts": [
+    "pyr.thiamine"
+   ],
+   "level": 3,
+   "rule": "tiamina-antes",
+   "stem": "A 48-year-old man with chronic alcohol use disorder is brought to the emergency department because of confusion. An intravenous infusion of 5% dextrose in water is started. Over the next several hours, he develops horizontal nystagmus, bilateral lateral rectus palsies, and a wide-based, unsteady gait.",
+   "question": "Decreased activity of which of the following enzymes most directly contributed to the worsening of his condition after the infusion?",
+   "options": [
+    {
+     "text": "Glucose-6-phosphate dehydrogenase",
+     "why": "Depende de NADP⁺, não de tiamina; sua deficiência causa hemólise após estresse oxidativo.",
+     "wouldBe": "o paciente tivesse hemólise após um oxidante (primaquina, sulfas, favas)."
+    },
+    {
+     "text": "Glycogen phosphorylase",
+     "why": "Usa piridoxal-fosfato (B6), não tiamina.",
+     "wouldBe": "a pergunta fosse sobre a vitamina que é cofator da glicogenólise."
+    },
+    {
+     "text": "Lactate dehydrogenase",
+     "why": "Não usa tiamina e continua funcionando — é por ela que o piruvato vira lactato.",
+     "wouldBe": "a pergunta fosse sobre a enzima que regenera NAD⁺ quando o piruvato não entra na mitocôndria."
+    },
+    {
+     "text": "Pyruvate carboxylase",
+     "why": "Usa biotina, não tiamina.",
+     "wouldBe": "a pergunta fosse sobre deficiência de biotina (por exemplo, consumo de clara de ovo crua)."
+    },
+    {
+     "text": "Pyruvate dehydrogenase",
+     "correct": true,
+     "why": "Deficiência de tiamina (B1): a tiamina pirofosfato é cofator da PDH (e da α-cetoglutarato desidrogenase e da transcetolase). A glicose IV aumenta o fluxo de piruvato numa PDH sem cofator → os neurônios ficam sem acetil-CoA e ATP e acumulam lactato → precipita Wernicke (oftalmoplegia, nistagmo, ataxia, confusão). Por isso: **tiamina antes da glicose**."
+    }
+   ],
+   "tested": "An alcoholic or malnourished patient whose neurologic status worsens after dextrose (Wernicke encephalopathy); the question asks for the thiamine-dependent enzyme."
+  },
+  {
+   "id": "q-u3-pdhd-p1",
+   "concepts": [
+    "pyr.pdhdef"
+   ],
+   "level": 3,
+   "rule": "tratar-bloqueio",
+   "stem": "A 7-month-old boy is evaluated for developmental delay, hypotonia, and episodes of rapid breathing. Serum studies show a lactate concentration of 8.1 mmol/L, an increased pyruvate concentration with a normal lactate-to-pyruvate ratio, and an increased alanine concentration. Serum glucose concentration is normal. His maternal uncle had a similar illness.",
+   "question": "Which of the following dietary changes is most likely to be beneficial?",
+   "options": [
+    {
+     "text": "Elimination of fructose and sucrose",
+     "why": "Trata a intolerância hereditária à frutose (aldolase B).",
+     "wouldBe": "os sintomas começassem com frutas, sucos ou mel, com hipoglicemia."
+    },
+    {
+     "text": "Elimination of lactose and galactose",
+     "why": "Trata a galactosemia (GALT).",
+     "wouldBe": "o quadro começasse com o leite, com icterícia, catarata e hepatomegalia."
+    },
+    {
+     "text": "Frequent feedings of uncooked cornstarch",
+     "why": "É útil quando falta glicose no jejum (von Gierke); aqui a glicemia é normal e o carboidrato piora o lactato.",
+     "wouldBe": "houvesse hipoglicemia de jejum com hepatomegalia (glicogenose tipo I)."
+    },
+    {
+     "text": "Increased carbohydrate and decreased fat intake",
+     "why": "Mais carboidrato = mais piruvato numa via bloqueada = mais lactato.",
+     "wouldBe": "o problema fosse falta de substrato para fazer glicose, e não um bloqueio após o piruvato."
+    },
+    {
+     "text": "Increased fat and decreased carbohydrate intake",
+     "correct": true,
+     "why": "Lactato, piruvato e alanina altos, com razão lactato/piruvato normal e herança ligada ao X → deficiência do complexo PDH. O piruvato acumula e desvia para lactato e alanina; o cérebro fica sem acetil-CoA. Tratamento lógico: evitar o que entra **antes** do bloqueio (carboidrato) e oferecer o que entra **depois** — gordura e aminoácidos cetogênicos (lisina, leucina), que viram acetil-CoA sem passar pela PDH."
+    }
+   ],
+   "tested": "An infant with lactic acidosis, increased alanine, and neurologic deficits (often X-linked); the question asks for the deficient complex or for the ketogenic dietary treatment."
+  },
+  {
+   "id": "q-u4-eth-p1",
+   "concepts": [
+    "gng.ethanol"
+   ],
+   "level": 3,
+   "rule": "nadh",
+   "stem": "A 34-year-old woman is brought to the emergency department 12 hours after a night of heavy drinking. She has eaten nothing since lunch the previous day. She is diaphoretic and confused. Her serum glucose concentration is 41 mg/dL, and her serum lactate concentration is 4.8 mmol/L.",
+   "question": "Which of the following is the most likely mechanism of her hypoglycemia?",
+   "options": [
+    {
+     "text": "Accelerated glycogen synthesis in the liver",
+     "why": "O jejum mantém a síntese desligada; o problema é glicogênio esgotado e gliconeogênese travada.",
+     "wouldBe": "a pergunta fosse sobre o estado alimentado após uma refeição rica em carboidrato."
+    },
+    {
+     "text": "Ethanol-stimulated insulin secretion by pancreatic β cells",
+     "why": "O etanol não é um secretagogo de insulina relevante; na hipoglicemia alcoólica a insulina está baixa.",
+     "wouldBe": "a hipoglicemia viesse com insulina e peptídeo C altos (insulinoma ou sulfonilureia)."
+    },
+    {
+     "text": "Increased glucose uptake by skeletal muscle",
+     "why": "O etanol não aumenta a captação muscular; ela depende de insulina e de exercício.",
+     "wouldBe": "a paciente tivesse feito exercício prolongado sob efeito de insulina."
+    },
+    {
+     "text": "Increased hepatic NADH/NAD⁺ ratio diverting gluconeogenic substrates",
+     "correct": true,
+     "why": "O metabolismo do etanol (álcool e aldeído desidrogenases) gera muito NADH. Com NADH alto, o piruvato vira lactato e o oxaloacetato vira malato → faltam substratos para a gliconeogênese. Com o glicogênio esgotado pelo jejum, vem a hipoglicemia, junto com a acidose lática."
+    },
+    {
+     "text": "Inhibition of glucose-6-phosphatase by acetaldehyde",
+     "why": "Não é o mecanismo: a glicose-6-fosfatase está normal; o que falta é substrato.",
+     "wouldBe": "a pergunta fosse sobre a deficiência congênita de glicose-6-fosfatase (von Gierke)."
+    }
+   ],
+   "tested": "Hypoglycemia and lactic acidosis after binge drinking in a fasting patient; the question asks for the biochemical mechanism (increased NADH/NAD⁺ ratio)."
+  },
+  {
+   "id": "q-u5-g6pd-p1",
+   "concepts": [
+    "ppp.g6pd"
+   ],
+   "level": 3,
+   "rule": "nadph-hemacia",
+   "stem": "A 24-year-old man of Greek descent receives primaquine before traveling to an area where malaria is endemic. Three days later, he develops fatigue, dark urine, and scleral icterus. His hemoglobin concentration is 8.9 g/dL. A peripheral blood smear shows red blood cells with dark inclusions on supravital staining and cells that appear to have a portion of their membrane removed.",
+   "question": "Decreased production of which of the following in his erythrocytes is the most likely cause of this condition?",
+   "options": [
+    {
+     "text": "2,3-Bisphosphoglycerate",
+     "why": "Não falta na deficiência de G6PD; ele **aumenta** na deficiência de piruvato quinase (curva da hemoglobina desviada para a direita).",
+     "wouldBe": "a pergunta fosse sobre a afinidade da hemoglobina pelo O₂."
+    },
+    {
+     "text": "ATP",
+     "why": "A falta de ATP na hemácia ocorre na deficiência de piruvato quinase (hemólise crônica, sem relação com oxidantes).",
+     "wouldBe": "a hemólise fosse crônica e sem gatilho oxidativo (deficiência de piruvato quinase)."
+    },
+    {
+     "text": "NADH",
+     "why": "Vem da glicólise e é usado pela citocromo b5 redutase para reduzir meta-hemoglobina; não regenera glutationa.",
+     "wouldBe": "a pergunta fosse sobre meta-hemoglobinemia congênita."
+    },
+    {
+     "text": "NADPH",
+     "correct": true,
+     "why": "Deficiência de G6PD: a hemácia só obtém NADPH pela via das pentoses. Sem NADPH, a glutationa não é regenerada; o oxidante (primaquina) desnatura a hemoglobina → corpúsculos de Heinz → macrófagos removem pedaços da membrana (bite cells) → hemólise."
+    },
+    {
+     "text": "Ribose-5-phosphate",
+     "why": "Pode ser obtida pela fase não oxidativa, reversível; a falta crítica é de NADPH.",
+     "wouldBe": "a pergunta fosse sobre a síntese de nucleotídeos em células em divisão."
+    }
+   ],
+   "tested": "Hemolysis after an oxidant drug, infection, or fava beans, with Heinz bodies and bite cells; the question asks for the deficient enzyme or the missing product (NADPH)."
+  },
+  {
+   "id": "q-u6-mus-p1",
+   "concepts": [
+    "glyc.muscle"
+   ],
+   "level": 2,
+   "rule": "figado-musculo",
+   "stem": "During a sprint, skeletal muscle fibers break down glycogen rapidly. Nerve impulses trigger the release of Ca²⁺ from the sarcoplasmic reticulum, which initiates contraction and at the same time accelerates glycogenolysis.",
+   "question": "Ca²⁺ most directly stimulates glycogenolysis in skeletal muscle by activating which of the following?",
+   "options": [
+    {
+     "text": "Adenylyl cyclase",
+     "why": "É ativada por receptores ligados a Gs (adrenalina), não diretamente pelo Ca²⁺ da contração.",
+     "wouldBe": "a pergunta fosse sobre o primeiro passo da sinalização da adrenalina."
+    },
+    {
+     "text": "Glycogen synthase",
+     "why": "É síntese, não quebra, e fica inativa durante o exercício.",
+     "wouldBe": "a pergunta fosse sobre a reposição de glicogênio depois do exercício (com insulina)."
+    },
+    {
+     "text": "Phosphorylase kinase",
+     "correct": true,
+     "why": "A fosforilase quinase ([[phosphorylase kinase]]) tem uma subunidade calmodulina: o Ca²⁺ liberado na contração a ativa diretamente, e ela fosforila a glicogênio fosforilase → mais glicose-1-P para a glicólise muscular. Contração e produção de energia andam juntas."
+    },
+    {
+     "text": "Protein kinase A",
+     "why": "É ativada pelo AMPc (adrenalina), não pelo Ca²⁺.",
+     "wouldBe": "o estímulo fosse a adrenalina via receptor β₂."
+    },
+    {
+     "text": "Protein phosphatase 1",
+     "why": "Retira fosfatos e inativa a fosforilase — efeito oposto.",
+     "wouldBe": "a pergunta fosse sobre como a insulina desliga a glicogenólise."
+    }
+   ],
+   "tested": "Questions ask how muscle contraction itself accelerates glycogenolysis (Ca²⁺–calmodulin activation of phosphorylase kinase) or how AMP activates muscle phosphorylase."
+  },
+  {
+   "id": "q-u7-mca-p1",
+   "concepts": [
+    "gsd.mcardle"
+   ],
+   "level": 3,
+   "rule": "marcador",
+   "stem": "A 19-year-old man has had muscle cramps and fatigue during strenuous exercise since childhood. If he slows down for a few minutes, he can then resume exercising at a moderate pace with less discomfort. After a weightlifting session, he noticed red-brown urine. His serum creatine kinase concentration is 1850 U/L. During forearm exercise with a blood pressure cuff inflated, his venous ammonia concentration rises normally, but his venous lactate concentration does not rise.",
+   "question": "Deficiency of which of the following enzymes is the most likely cause?",
+   "options": [
+    {
+     "text": "Carnitine palmitoyltransferase II",
+     "why": "Também causa mioglobinúria, mas após exercício **prolongado**, jejum ou infecção, sem segundo fôlego — e o lactato sobe normalmente no teste isquêmico (a glicogenólise está intacta).",
+     "wouldBe": "a mioglobinúria viesse após exercício prolongado ou jejum, sem cãibras no início do esforço."
+    },
+    {
+     "text": "Glucose-6-phosphatase",
+     "why": "A doença de von Gierke é hepática: hipoglicemia, lactato **alto** e hepatomegalia; não afeta o músculo.",
+     "wouldBe": "o quadro fosse de um lactente com hipoglicemia de jejum, hepatomegalia e acidose lática."
+    },
+    {
+     "text": "Glycogen debranching enzyme",
+     "why": "A doença de Cori causa hepatomegalia e hipoglicemia de jejum (com miopatia em alguns casos), sem o fenômeno do segundo fôlego.",
+     "wouldBe": "houvesse hepatomegalia e hipoglicemia de jejum com lactato normal e CK alta."
+    },
+    {
+     "text": "Lysosomal acid α-glucosidase",
+     "why": "A doença de Pompe causa fraqueza fixa (cardiomiopatia e hipotonia no lactente; fraqueza proximal e respiratória na forma tardia), não cãibras com segundo fôlego.",
+     "wouldBe": "houvesse fraqueza proximal progressiva com insuficiência respiratória, ou cardiomegalia e hipotonia num lactente."
+    },
+    {
+     "text": "Muscle glycogen phosphorylase",
+     "correct": true,
+     "why": "Doença de McArdle (glicogenose V): sem miofosforilase, o músculo não quebra glicogênio → sem glicose-6-P → sem piruvato → **sem lactato** no exercício isquêmico; a amônia sobe normalmente, mostrando que houve esforço. Falta ATP → cãibras e rabdomiólise (mioglobinúria). O segundo fôlego vem quando o fluxo sanguíneo traz glicose e ácidos graxos ao músculo."
+    }
+   ],
+   "tested": "Exercise intolerance with cramps, myoglobinuria, and a second-wind phenomenon; flat venous lactate with a normal ammonia rise on ischemic forearm testing."
+  },
+  {
+   "id": "q-u8-hfi-p1",
+   "concepts": [
+    "sug.hfi"
+   ],
+   "level": 3,
+   "rule": "sequestro-fosfato",
+   "stem": "A 7-month-old girl has had recurrent vomiting, sweating, and lethargy since her parents began giving her pureed fruits and fruit juice 6 weeks ago. Examination shows hepatomegaly and mild jaundice. A urine dipstick test for glucose is negative, but a urine test for reducing substances is positive.",
+   "question": "Which of the following substances most likely accumulates in her hepatocytes?",
+   "options": [
+    {
+     "text": "Fructose-1,6-bisphosphate",
+     "why": "É intermediário da glicólise e não acumula nesse defeito (a frutose-1-P é clivada pela aldolase B, sem passar pela PFK-1).",
+     "wouldBe": "a pergunta fosse sobre o substrato da frutose-1,6-bisfosfatase na gliconeogênese."
+    },
+    {
+     "text": "Fructose-1-phosphate",
+     "correct": true,
+     "why": "Intolerância hereditária à frutose: falta a aldolase B ([[aldolase B]]) → a frutose-1-fosfato acumula e **sequestra fosfato** → falta Pi e ATP → glicogenólise e gliconeogênese param → hipoglicemia após frutas e sucos; lesão hepática (icterícia, hepatomegalia). A frutose na urina é substância redutora, mas a fita (glicose oxidase) só detecta glicose."
+    },
+    {
+     "text": "Galactose-1-phosphate",
+     "why": "Acumula na galactosemia clássica (GALT), desencadeada pelo leite, não por frutas.",
+     "wouldBe": "os sintomas começassem com o aleitamento, com catarata e sepse por _E. coli_."
+    },
+    {
+     "text": "Glucose-6-phosphate",
+     "why": "Acumula na doença de von Gierke, com hipoglicemia poucas horas após qualquer refeição, independentemente da frutose.",
+     "wouldBe": "a hipoglicemia ocorresse em jejuns curtos desde o nascimento, com lactato e ácido úrico altos."
+    },
+    {
+     "text": "Sorbitol",
+     "why": "Acumula no cristalino, nos nervos e na retina na hiperglicemia crônica (via do poliol).",
+     "wouldBe": "a pergunta fosse sobre complicações do diabetes (catarata, neuropatia)."
+    }
+   ],
+   "tested": "Symptoms that begin when fruit, juice, honey, or sucrose is introduced, with hypoglycemia, liver injury, and positive urine reducing substances; the question asks for the deficient enzyme (aldolase B) or the accumulating metabolite."
+  },
+  {
+   "id": "q-u9-cpep-p1",
+   "concepts": [
+    "int.cpeptide"
+   ],
+   "level": 3,
+   "rule": "peptideo-c",
+   "stem": "A 29-year-old nurse is evaluated for three episodes of confusion and sweating over the past month. During an episode in the hospital, her serum glucose concentration is 36 mg/dL, her serum insulin concentration is markedly increased, her C-peptide concentration is low, and a screen for sulfonylureas is negative.",
+   "question": "Which of the following is the most likely cause of her hypoglycemia?",
+   "options": [
+    {
+     "text": "Adrenal insufficiency",
+     "why": "Dá hipoglicemia com insulina **baixa** (falta cortisol para sustentar a gliconeogênese).",
+     "wouldBe": "houvesse hipotensão, hiponatremia, hipercalemia e insulina suprimida."
+    },
+    {
+     "text": "Insulinoma",
+     "why": "Produz insulina endógena → insulina **e** peptídeo C altos.",
+     "wouldBe": "o peptídeo C estivesse alto com triagem de sulfonilureia negativa."
+    },
+    {
+     "text": "Medium-chain acyl-CoA dehydrogenase deficiency",
+     "why": "Causa hipoglicemia hipocetótica de jejum, geralmente na infância, com insulina baixa.",
+     "wouldBe": "uma criança tivesse hipoglicemia após jejum ou infecção, com cetonas inapropriadamente baixas."
+    },
+    {
+     "text": "Sulfonylurea ingestion",
+     "why": "Estimula a célula β → insulina e peptídeo C altos, com triagem positiva.",
+     "wouldBe": "insulina e peptídeo C estivessem altos e a triagem de sulfonilureia fosse positiva."
+    },
+    {
+     "text": "Surreptitious insulin injection",
+     "correct": true,
+     "why": "Insulina endógena e peptídeo C ([[C-peptide]]) saem juntos da pró-insulina (1:1). Insulina alta com peptídeo C baixo = insulina que veio **de fora** (as preparações comerciais não têm peptídeo C), enquanto a própria hipoglicemia suprime a célula β. O acesso a insulina (profissional de saúde) reforça a hipótese."
+    }
+   ],
+   "tested": "Hypoglycemia with high insulin and low C-peptide in a health care worker or a relative of a patient with diabetes (exogenous insulin), contrasted with insulinoma and sulfonylurea use."
+  }
+ ]
+}

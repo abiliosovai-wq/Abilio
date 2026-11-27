@@ -1,0 +1,14 @@
+{
+  "title": "Step 1 Interativo",
+  "subjects": [
+    { "id": "bioquimica", "name": "Bioquímica", "badge": "Bq", "color": "#3456d1", "soon": ["Biologia molecular", "Metabolismo dos lipídios", "Aminoácidos e ciclo da ureia", "Vitaminas e nutrição", "Doenças lisossomais"] },
+    { "id": "imunologia", "name": "Imunologia", "badge": "Im", "color": "#0f8a7a", "soon": [] },
+    { "id": "microbiologia", "name": "Microbiologia", "badge": "Mi", "color": "#7a4bd1", "soon": [] },
+    { "id": "farmacologia", "name": "Farmacologia", "badge": "Fa", "color": "#c0531f", "soon": [] },
+    { "id": "fisiologia", "name": "Fisiologia", "badge": "Fi", "color": "#1d7fbf", "soon": [] },
+    { "id": "patologia", "name": "Patologia", "badge": "Pa", "color": "#b8336a", "soon": [] },
+    { "id": "genetica", "name": "Genética", "badge": "Ge", "color": "#5a7d12", "soon": [] },
+    { "id": "bioestatistica", "name": "Bioestatística e Epidemiologia", "badge": "Bi", "color": "#8a6d00", "soon": [] },
+    { "id": "etica", "name": "Ética", "badge": "Ét", "color": "#5b6478", "soon": [] }
+  ]
+}
